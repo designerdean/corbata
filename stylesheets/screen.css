@@ -547,7 +547,7 @@ a, a:visited {
 /* line 169, screen.scss */
 blockquote {
   background-color: #ec2535;
-  border-left: 5px solid #f8e461;
+  border-left: 7px solid #f8e461;
   color: #ddf1fb;
   font-style: italic;
   margin: 2em auto 2em auto;
@@ -603,6 +603,7 @@ ul {
 footer {
   background-color: #2d2f45;
   font-size: 0.8em;
+  font-weight: bold;
   padding: 1em 2em;
   position: fixed;
   right: 0;
@@ -611,28 +612,34 @@ footer {
   text-align: right;
 }
 
-/* line 225, screen.scss */
+/* line 226, screen.scss */
 footer a, footer a:visited {
   color: #f8e461;
+  text-decoration: none;
 }
 
-/* line 229, screen.scss */
+/* line 231, screen.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 235, screen.scss */
 footer a:first-child {
   float: left;
 }
 
-/* line 233, screen.scss */
+/* line 239, screen.scss */
 footer a:first-child + a {
   margin-right: 1em;
 }
 
-/* line 237, screen.scss */
+/* line 243, screen.scss */
 p.btn {
   margin: 3em auto 0 auto;
   text-align: center;
 }
 
-/* line 242, screen.scss */
+/* line 248, screen.scss */
 p.btn a, p.btn a:visited {
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
