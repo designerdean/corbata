@@ -27,7 +27,11 @@ My reusable package includes all the things I use in nearly every website I buil
 - [Modernizr](http://modernizr.com/)
 - [jQuery](http://www.jquery.com) - [Google Code protocol-less reference](http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/#protocolless)
 
+---
+
 [Download](https://github.com/designerdean/corbata/zipball/gh-pages)
+
+---
 
 [View on GitHub](https://github.com/designerdean/corbata)
 
