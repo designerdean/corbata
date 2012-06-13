@@ -8,25 +8,25 @@ My reusable package includes all the things I use in nearly every website I buil
 
 ## Markup & Images
 
-- [Paul Irish's conditional markup] (http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/)
+- [Paul Irish's conditional markup](http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/)
 - (https://developer.mozilla.org/en/Mobile/Viewport_meta_tag#Viewport_basics)Viewport Metatag to control layout in mobile browsers
 - (http://theie7countdown.com/join-the-cause)Markup prompting &lt;IE8 users to upgrade browsers or install Google Chrome Frame 
 - Pre-sized favicon and (http://gigaom.com/apple/how-to-create-ios-device-home-screen-icons-for-web-sites/)Apple touch icons
 
-## CSS / Sass / Compass (requires an installation of the prereleases of [Sass] (http://sass-lang.com/download.html) and [Compass] (http://compass-style.org/install/)
+## CSS / Sass / Compass (requires an installation of the prereleases of [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/)
 
-- [Andy Clarke's print.css] (http://hardboiledwebdesign.com/code)
-- [Google web fonts CSS tag] (http://www.google.com/webfonts)
-- [Trevor Davis' Nested Responsive Grid] (http://davist11.github.com/nested-responsive-grid/)
-- [Nested Media Queries] (http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32)
-- [Compass imports] (http://compass-style.org/reference/compass/) [Reset] (http://compass-style.org/reference/compass/reset/), [CSS3] (http://compass-style.org/reference/compass/css3/), [Typography] (http://compass-style.org/reference/compass/typography/), [Utilities] (http://compass-style.org/reference/compass/utilities/), and [Layout] (http://compass-style.org/reference/compass/layout/)
-- An attempt to follow Nicolas Gallagher's [idiomatic CSS guidelines] (https://github.com/necolas/idiomatic-css) for stylesheet organization
+- [Andy Clarke's print.css](http://hardboiledwebdesign.com/code)
+- [Google web fonts CSS tag](http://www.google.com/webfonts)
+- [Trevor Davis' Nested Responsive Grid](http://davist11.github.com/nested-responsive-grid/)
+- [Nested Media Queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32)
+- [Compass imports](http://compass-style.org/reference/compass/) [Reset](http://compass-style.org/reference/compass/reset/), [CSS3](http://compass-style.org/reference/compass/css3/), [Typography](http://compass-style.org/reference/compass/typography/), [Utilities](http://compass-style.org/reference/compass/utilities/), and [Layout](http://compass-style.org/reference/compass/layout/)
+- An attempt to follow Nicolas Gallagher's [idiomatic CSS guidelines](https://github.com/necolas/idiomatic-css) for stylesheet organization
 
 ## JavaScript
 
-- [View on GitHub] (https://github.com/designerdean/corbata)
-- [Modernizr] (http://modernizr.com/)
-- [jQuery] (http://www.jquery.com) - [Google Code protocol-less reference] (http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/#protocolless)
+- [View on GitHub](https://github.com/designerdean/corbata)
+- [Modernizr](http://modernizr.com/)
+- [jQuery](http://www.jquery.com) - [Google Code protocol-less reference](http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/#protocolless)
 
-[Follow me on Twitter] (https://twitter.com/designer_dean)
-[Visit my website] (http://www.designerdean.com)
+[Follow me on Twitter](https://twitter.com/designer_dean)
+[Visit my website](http://www.designerdean.com)
