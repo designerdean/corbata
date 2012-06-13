@@ -227,13 +227,32 @@ footer {
 }
 
 footer a, footer a:visited {
-  color: #ddf1fb;
+  color: #f8e461;
 }
 
 footer a:first-child {
-float: left;
+  float: left;
 }
 
 footer a:first-child + a {
   margin-right: 1em;
+}
+
+p.btn {
+  margin: 3em auto 0 auto;
+  text-align: center;
+}
+
+p.btn a, p.btn a:visited {
+  @include border-radius(18px);
+  background-color: #f8e461;
+  color: #ee554b;
+  cursor: pointer;
+  display: inline;
+  font-family: "Titan One", cursive;
+  font-size: 3em;
+  line-height: 1.3em;
+  padding: 0.3em 0.5em;
+  text-align: center;
+  text-decoration: none;
 }

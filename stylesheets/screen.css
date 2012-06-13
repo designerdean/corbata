@@ -613,7 +613,7 @@ footer {
 
 /* line 229, screen.scss */
 footer a, footer a:visited {
-  color: #ddf1fb;
+  color: #f8e461;
 }
 
 /* line 233, screen.scss */
@@ -624,4 +624,29 @@ footer a:first-child {
 /* line 237, screen.scss */
 footer a:first-child + a {
   margin-right: 1em;
+}
+
+/* line 241, screen.scss */
+p.btn {
+  margin: 3em auto 0 auto;
+  text-align: center;
+}
+
+/* line 246, screen.scss */
+p.btn a, p.btn a:visited {
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  background-color: #f8e461;
+  color: #ee554b;
+  cursor: pointer;
+  display: inline;
+  font-family: "Titan One", cursive;
+  font-size: 3em;
+  line-height: 1.3em;
+  padding: 0.3em 0.5em;
+  text-align: center;
+  text-decoration: none;
 }
