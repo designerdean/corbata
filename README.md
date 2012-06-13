@@ -9,9 +9,9 @@ My reusable package includes all the things I use in nearly every website I buil
 ## Markup & Images
 
 - [Paul Irish's conditional markup](http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/)
-- (https://developer.mozilla.org/en/Mobile/Viewport_meta_tag#Viewport_basics)Viewport Metatag to control layout in mobile browsers
-- (http://theie7countdown.com/join-the-cause)Markup prompting &lt;IE8 users to upgrade browsers or install Google Chrome Frame 
-- Pre-sized favicon and (http://gigaom.com/apple/how-to-create-ios-device-home-screen-icons-for-web-sites/)Apple touch icons
+- [Viewport Metatag to control layout in mobile browsers](https://developer.mozilla.org/en/Mobile/Viewport_meta_tag#Viewport_basics)
+- [Markup prompting &lt;IE8 users to upgrade browsers or install Google Chrome Frame](http://theie7countdown.com/join-the-cause) 
+- Pre-sized favicon and [Apple touch icons](http://gigaom.com/apple/how-to-create-ios-device-home-screen-icons-for-web-sites/)
 
 ## CSS / Sass / Compass (requires an installation of the prereleases of [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/)
 
