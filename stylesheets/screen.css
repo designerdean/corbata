@@ -531,20 +531,33 @@ body {
   background-color: #ddf1fb;
   color: #2d2f45;
 }
-
-/* line 159, screen.scss */
-.wrapper {
-  max-width: 1200px;
-  width: 90%;
+@media only screen and (max-width: 768px) {
+  /* line 154, screen.scss */
+  body {
+    font-size: 0.8em;
+  }
 }
 
-/* line 164, screen.scss */
+/* line 160, screen.scss */
+.wrapper {
+  max-width: 1200px;
+  padding-bottom: 3em;
+  width: 90%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 160, screen.scss */
+  .wrapper {
+    padding-bottom: 0;
+  }
+}
+
+/* line 167, screen.scss */
 a, a:visited {
   color: #ba2a2e;
   text-decoration: underline;
 }
 
-/* line 169, screen.scss */
+/* line 172, screen.scss */
 blockquote {
   background-color: #ec2535;
   border-left: 7px solid #f8e461;
@@ -555,7 +568,7 @@ blockquote {
   width: 80%;
 }
 
-/* line 179, screen.scss */
+/* line 182, screen.scss */
 h1 {
   border-bottom: 20px double #ee554b;
   color: #ec2535;
@@ -567,8 +580,14 @@ h1 {
   text-align: center;
   text-transform: capitalize;
 }
+@media only screen and (max-width: 480px) {
+  /* line 182, screen.scss */
+  h1 {
+    font-size: 4em;
+  }
+}
 
-/* line 191, screen.scss */
+/* line 195, screen.scss */
 h2 {
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
@@ -583,23 +602,23 @@ h2 {
   padding: 1em 1.2em;
 }
 
-/* line 201, screen.scss */
+/* line 205, screen.scss */
 h2 a, h2 a:visited {
   color: #ddf1fb;
 }
 
-/* line 205, screen.scss */
+/* line 209, screen.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 209, screen.scss */
+/* line 213, screen.scss */
 ul {
   list-style-type: circle;
   margin: 0 3em 1em 3em;
 }
 
-/* line 214, screen.scss */
+/* line 218, screen.scss */
 footer {
   background-color: #2d2f45;
   font-size: 0.8em;
@@ -611,35 +630,62 @@ footer {
   left: 0;
   text-align: right;
 }
+@media only screen and (max-width: 768px) {
+  /* line 218, screen.scss */
+  footer {
+    font-size: 1em;
+    position: static;
+  }
+}
 
-/* line 226, screen.scss */
+/* line 231, screen.scss */
 footer a, footer a:visited {
   color: #f8e461;
   text-decoration: none;
 }
+@media only screen and (max-width: 768px) {
+  /* line 231, screen.scss */
+  footer a, footer a:visited {
+    display: block;
+    line-height: 2em;
+    text-align: center;
+  }
+}
 
-/* line 231, screen.scss */
+/* line 237, screen.scss */
 footer a:hover {
   text-decoration: underline;
 }
 
-/* line 235, screen.scss */
+/* line 241, screen.scss */
 footer a:first-child {
   float: left;
 }
+@media only screen and (max-width: 768px) {
+  /* line 241, screen.scss */
+  footer a:first-child {
+    float: none;
+  }
+}
 
-/* line 239, screen.scss */
+/* line 246, screen.scss */
 footer a:first-child + a {
   margin-right: 1em;
 }
+@media only screen and (max-width: 768px) {
+  /* line 246, screen.scss */
+  footer a:first-child + a {
+    margin-right: 0;
+  }
+}
 
-/* line 243, screen.scss */
+/* line 251, screen.scss */
 p.btn {
-  margin: 3em auto 0 auto;
+  margin: 3em auto;
   text-align: center;
 }
 
-/* line 248, screen.scss */
+/* line 256, screen.scss */
 p.btn a, p.btn a:visited {
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
@@ -656,4 +702,10 @@ p.btn a, p.btn a:visited {
   padding: 0.3em 0.5em;
   text-align: center;
   text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+  /* line 256, screen.scss */
+  p.btn a, p.btn a:visited {
+    font-size: 3em;
+  }
 }

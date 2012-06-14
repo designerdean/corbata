@@ -154,11 +154,14 @@ figcaption {
 body {
   background-color: #ddf1fb;
   color: #2d2f45;
+  @include respond-to(medium-screens) {font-size: 0.8em;}
 }
 
 .wrapper {
   max-width: 1200px;
+  padding-bottom: 3em;
   width: 90%;
+  @include respond-to(medium-screens) {padding-bottom: 0;}
 }
 
 a, a:visited {
@@ -186,6 +189,7 @@ h1 {
   padding: 0.2em 0;
   text-align: center;
   text-transform: capitalize;
+  @include respond-to(small-screens) {font-size: 4em;}
 }
 
 h2 {
@@ -221,11 +225,13 @@ footer {
     bottom: 0;
     left: 0;
   text-align: right;
+  @include respond-to(medium-screens) {font-size: 1em; position: static;}
 }
 
 footer a, footer a:visited {
   color: #f8e461;
   text-decoration: none;
+  @include respond-to(medium-screens) {display: block; line-height: 2em; text-align: center;}
 }
 
 footer a:hover {
@@ -234,14 +240,16 @@ footer a:hover {
 
 footer a:first-child {
   float: left;
+  @include respond-to(medium-screens) {float: none;}
 }
 
 footer a:first-child + a {
   margin-right: 1em;
+  @include respond-to(medium-screens) {margin-right: 0;}
 }
 
 p.btn {
-  margin: 3em auto 0 auto;
+  margin: 3em auto;
   text-align: center;
 }
 
@@ -257,4 +265,5 @@ p.btn a, p.btn a:visited {
   padding: 0.3em 0.5em;
   text-align: center;
   text-decoration: none;
+  @include respond-to(small-screens) {font-size: 3em;}
 }
