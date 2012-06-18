@@ -492,20 +492,21 @@ body {
   line-height: 1.5em;
 }
 
-/* line 48, screen.scss */
+/* line 73, screen.scss */
+img {
+  max-width: 100%;
+}
+
+/* If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover */
+/* Apply box-sizing: border-box to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw */
+/* line 125, screen.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 77, screen.scss */
-img {
-  max-width: 100%;
-}
-
-/* If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover */
-/* line 133, screen.scss */
+/* line 135, screen.scss */
 .ancient {
   background: #2c98d6;
   border-bottom: 2px solid #ffffff;
@@ -520,45 +521,45 @@ img {
   z-index: 100;
 }
 
-/* line 148, screen.scss */
+/* line 150, screen.scss */
 .ancient a,
 .ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* line 156, screen.scss */
+/* line 158, screen.scss */
 body {
   background-color: #ddf1fb;
   color: #2d2f45;
 }
 @media only screen and (max-width: 768px) {
-  /* line 156, screen.scss */
+  /* line 158, screen.scss */
   body {
     font-size: 0.8em;
   }
 }
 
-/* line 162, screen.scss */
+/* line 164, screen.scss */
 .wrapper {
   max-width: 1200px;
   padding-bottom: 3em;
   width: 90%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 162, screen.scss */
+  /* line 164, screen.scss */
   .wrapper {
     padding-bottom: 0;
   }
 }
 
-/* line 169, screen.scss */
+/* line 171, screen.scss */
 a, a:visited {
   color: #ba2a2e;
   text-decoration: underline;
 }
 
-/* line 174, screen.scss */
+/* line 176, screen.scss */
 blockquote {
   background-color: #ec2535;
   border-left: 7px solid #f8e461;
@@ -569,7 +570,7 @@ blockquote {
   width: 80%;
 }
 
-/* line 184, screen.scss */
+/* line 186, screen.scss */
 h1 {
   border-bottom: 20px double #ee554b;
   color: #ec2535;
@@ -582,13 +583,13 @@ h1 {
   text-transform: capitalize;
 }
 @media only screen and (max-width: 480px) {
-  /* line 184, screen.scss */
+  /* line 186, screen.scss */
   h1 {
     font-size: 4em;
   }
 }
 
-/* line 197, screen.scss */
+/* line 199, screen.scss */
 h2 {
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
@@ -604,23 +605,23 @@ h2 {
   padding: 1em 1.2em;
 }
 
-/* line 208, screen.scss */
+/* line 210, screen.scss */
 h2 a, h2 a:visited {
   color: #ddf1fb;
 }
 
-/* line 212, screen.scss */
+/* line 214, screen.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 216, screen.scss */
+/* line 218, screen.scss */
 ul {
   list-style-type: circle;
   margin: 0 3em 1em 3em;
 }
 
-/* line 221, screen.scss */
+/* line 223, screen.scss */
 footer {
   background-color: #2d2f45;
   font-size: 0.8em;
@@ -633,20 +634,20 @@ footer {
   text-align: right;
 }
 @media only screen and (max-width: 768px) {
-  /* line 221, screen.scss */
+  /* line 223, screen.scss */
   footer {
     font-size: 1em;
     position: static;
   }
 }
 
-/* line 234, screen.scss */
+/* line 236, screen.scss */
 footer a, footer a:visited {
   color: #f8e461;
   text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
-  /* line 234, screen.scss */
+  /* line 236, screen.scss */
   footer a, footer a:visited {
     display: block;
     line-height: 2em;
@@ -654,40 +655,40 @@ footer a, footer a:visited {
   }
 }
 
-/* line 240, screen.scss */
+/* line 242, screen.scss */
 footer a:hover {
   text-decoration: underline;
 }
 
-/* line 244, screen.scss */
+/* line 246, screen.scss */
 footer a:first-child {
   float: left;
 }
 @media only screen and (max-width: 768px) {
-  /* line 244, screen.scss */
+  /* line 246, screen.scss */
   footer a:first-child {
     float: none;
   }
 }
 
-/* line 249, screen.scss */
+/* line 251, screen.scss */
 footer a:first-child + a {
   margin-right: 1em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 249, screen.scss */
+  /* line 251, screen.scss */
   footer a:first-child + a {
     margin-right: 0;
   }
 }
 
-/* line 254, screen.scss */
+/* line 256, screen.scss */
 p.btn {
   margin: 3em auto;
   text-align: center;
 }
 
-/* line 259, screen.scss */
+/* line 261, screen.scss */
 p.btn a, p.btn a:visited {
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
@@ -706,7 +707,7 @@ p.btn a, p.btn a:visited {
   text-decoration: none;
 }
 @media only screen and (max-width: 480px) {
-  /* line 259, screen.scss */
+  /* line 261, screen.scss */
   p.btn a, p.btn a:visited {
     font-size: 3em;
   }
