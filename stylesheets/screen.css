@@ -504,7 +504,8 @@ img {
   max-width: 100%;
 }
 
-/* line 131, screen.scss */
+/* If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover */
+/* line 133, screen.scss */
 .ancient {
   background: #2c98d6;
   border-bottom: 2px solid #ffffff;
@@ -519,45 +520,45 @@ img {
   z-index: 100;
 }
 
-/* line 146, screen.scss */
+/* line 148, screen.scss */
 .ancient a,
 .ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* line 154, screen.scss */
+/* line 156, screen.scss */
 body {
   background-color: #ddf1fb;
   color: #2d2f45;
 }
 @media only screen and (max-width: 768px) {
-  /* line 154, screen.scss */
+  /* line 156, screen.scss */
   body {
     font-size: 0.8em;
   }
 }
 
-/* line 160, screen.scss */
+/* line 162, screen.scss */
 .wrapper {
   max-width: 1200px;
   padding-bottom: 3em;
   width: 90%;
 }
 @media only screen and (max-width: 768px) {
-  /* line 160, screen.scss */
+  /* line 162, screen.scss */
   .wrapper {
     padding-bottom: 0;
   }
 }
 
-/* line 167, screen.scss */
+/* line 169, screen.scss */
 a, a:visited {
   color: #ba2a2e;
   text-decoration: underline;
 }
 
-/* line 172, screen.scss */
+/* line 174, screen.scss */
 blockquote {
   background-color: #ec2535;
   border-left: 7px solid #f8e461;
@@ -568,7 +569,7 @@ blockquote {
   width: 80%;
 }
 
-/* line 182, screen.scss */
+/* line 184, screen.scss */
 h1 {
   border-bottom: 20px double #ee554b;
   color: #ec2535;
@@ -581,13 +582,13 @@ h1 {
   text-transform: capitalize;
 }
 @media only screen and (max-width: 480px) {
-  /* line 182, screen.scss */
+  /* line 184, screen.scss */
   h1 {
     font-size: 4em;
   }
 }
 
-/* line 195, screen.scss */
+/* line 197, screen.scss */
 h2 {
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
@@ -603,23 +604,23 @@ h2 {
   padding: 1em 1.2em;
 }
 
-/* line 206, screen.scss */
+/* line 208, screen.scss */
 h2 a, h2 a:visited {
   color: #ddf1fb;
 }
 
-/* line 210, screen.scss */
+/* line 212, screen.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 214, screen.scss */
+/* line 216, screen.scss */
 ul {
   list-style-type: circle;
   margin: 0 3em 1em 3em;
 }
 
-/* line 219, screen.scss */
+/* line 221, screen.scss */
 footer {
   background-color: #2d2f45;
   font-size: 0.8em;
@@ -632,20 +633,20 @@ footer {
   text-align: right;
 }
 @media only screen and (max-width: 768px) {
-  /* line 219, screen.scss */
+  /* line 221, screen.scss */
   footer {
     font-size: 1em;
     position: static;
   }
 }
 
-/* line 232, screen.scss */
+/* line 234, screen.scss */
 footer a, footer a:visited {
   color: #f8e461;
   text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
-  /* line 232, screen.scss */
+  /* line 234, screen.scss */
   footer a, footer a:visited {
     display: block;
     line-height: 2em;
@@ -653,40 +654,40 @@ footer a, footer a:visited {
   }
 }
 
-/* line 238, screen.scss */
+/* line 240, screen.scss */
 footer a:hover {
   text-decoration: underline;
 }
 
-/* line 242, screen.scss */
+/* line 244, screen.scss */
 footer a:first-child {
   float: left;
 }
 @media only screen and (max-width: 768px) {
-  /* line 242, screen.scss */
+  /* line 244, screen.scss */
   footer a:first-child {
     float: none;
   }
 }
 
-/* line 247, screen.scss */
+/* line 249, screen.scss */
 footer a:first-child + a {
   margin-right: 1em;
 }
 @media only screen and (max-width: 768px) {
-  /* line 247, screen.scss */
+  /* line 249, screen.scss */
   footer a:first-child + a {
     margin-right: 0;
   }
 }
 
-/* line 252, screen.scss */
+/* line 254, screen.scss */
 p.btn {
   margin: 3em auto;
   text-align: center;
 }
 
-/* line 257, screen.scss */
+/* line 259, screen.scss */
 p.btn a, p.btn a:visited {
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
@@ -705,7 +706,7 @@ p.btn a, p.btn a:visited {
   text-decoration: none;
 }
 @media only screen and (max-width: 480px) {
-  /* line 257, screen.scss */
+  /* line 259, screen.scss */
   p.btn a, p.btn a:visited {
     font-size: 3em;
   }

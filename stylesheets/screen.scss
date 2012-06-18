@@ -84,7 +84,9 @@ img {
 a, a:visited {
 	
 }
- 
+
+/* If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover */
+
 a:hover {
 
 }
