@@ -12,6 +12,7 @@ My reusable package includes all the things I use in nearly every website I buil
 - [Viewport Metatag to control layout in mobile browsers](https://developer.mozilla.org/en/Mobile/Viewport_meta_tag#Viewport_basics)
 - [Markup prompting &lt;IE8 users to upgrade browsers or install Google Chrome Frame](http://theie7countdown.com/join-the-cause) 
 - Pre-sized favicon and [Apple touch icons](http://gigaom.com/apple/how-to-create-ios-device-home-screen-icons-for-web-sites/)
+- Google Analytics taken from [HTML5 Boilerplate](http://html5boilerplate.com)
 
 ## CSS / Sass / Compass (requires an installation of the prereleases of [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/)
 
