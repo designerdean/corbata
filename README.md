@@ -17,7 +17,6 @@ My reusable package includes all the things I use in nearly every website I buil
 
 - [Andy Clarke's print.css](http://hardboiledwebdesign.com/code)
 - [Google web fonts CSS tag](http://www.google.com/webfonts)
-- [Trevor Davis' Nested Responsive Grid](http://davist11.github.com/nested-responsive-grid/)
 - [Nested Media Queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32)
 - [Compass imports](http://compass-style.org/reference/compass/) [Reset](http://compass-style.org/reference/compass/reset/), [CSS3](http://compass-style.org/reference/compass/css3/), [Typography](http://compass-style.org/reference/compass/typography/), [Utilities](http://compass-style.org/reference/compass/utilities/), and [Layout](http://compass-style.org/reference/compass/layout/)
 - An attempt to follow Nicolas Gallagher's [idiomatic CSS guidelines](https://github.com/necolas/idiomatic-css) for stylesheet organization
