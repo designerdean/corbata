@@ -29,7 +29,7 @@ My reusable package includes all the things I use in nearly every website I buil
 
 ---
 
-[Download](https://github.com/designerdean/corbata/zipball/gh-pages)
+[Download](https://github.com/designerdean/corbata/zipball/master)
 
 ---
 
