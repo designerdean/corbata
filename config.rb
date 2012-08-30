@@ -22,5 +22,3 @@ javascripts_dir = "javascripts"
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass stylesheets scss && rm -rf sass && mv scss sass
-
-Sass::Script::Number.precision = 10
