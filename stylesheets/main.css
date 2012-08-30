@@ -1,0 +1,377 @@
+/* line 17, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 36, main.scss */
+html {
+  height: 100%;
+}
+
+/* line 40, main.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  height: 100%;
+  line-height: 1.5em;
+}
+
+/* line 72, main.scss */
+img {
+  max-width: 100%;
+}
+
+/* If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover */
+/* Apply box-sizing: border-box to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw */
+/* line 124, main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 134, main.scss */
+.ancient {
+  background: #2c98d6;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  margin: 0;
+  padding: 0.5em 1em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  z-index: 100;
+}
+
+/* line 149, main.scss */
+.ancient a,
+.ancient a:visited {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media print {
+  /* line 158, main.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 166, main.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 170, main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 174, main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 184, main.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 189, main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 194, main.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 199, main.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 203, main.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 213, main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 219, main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* line 227, main.scss */
+body {
+  background-color: #ddf1fb;
+  color: #2d2f45;
+}
+@media only screen and (max-width: 768px) {
+  /* line 227, main.scss */
+  body {
+    font-size: 0.8em;
+  }
+}
+
+/* line 233, main.scss */
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 3em;
+  width: 90%;
+}
+@media only screen and (max-width: 768px) {
+  /* line 233, main.scss */
+  .wrapper {
+    padding-bottom: 0;
+  }
+}
+
+/* line 241, main.scss */
+a, a:visited {
+  color: #ba2a2e;
+  text-decoration: underline;
+}
+
+/* line 246, main.scss */
+blockquote {
+  background-color: #ec2535;
+  border-left: 7px solid #f8e461;
+  color: #ddf1fb;
+  font-style: italic;
+  margin: 2em auto 2em auto;
+  padding: 1.5em 2em;
+  width: 80%;
+}
+
+/* line 256, main.scss */
+h1 {
+  border-bottom: 20px double #ee554b;
+  color: #ec2535;
+  font-family: "Titan One", cursive;
+  font-size: 5em;
+  line-height: 1.3em;
+  margin-bottom: 0.3em;
+  padding: 0.2em 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 480px) {
+  /* line 256, main.scss */
+  h1 {
+    font-size: 4em;
+  }
+}
+
+/* line 269, main.scss */
+h2 {
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  background-color: #ee554b;
+  color: #ddf1fb;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em 1.2em;
+}
+
+/* line 280, main.scss */
+h2 a, h2 a:visited {
+  color: #ddf1fb;
+}
+
+/* line 284, main.scss */
+p {
+  margin-bottom: 1em;
+}
+
+/* line 288, main.scss */
+ul {
+  list-style-type: circle;
+  margin: 0 3em 1em 3em;
+}
+
+/* line 293, main.scss */
+footer {
+  background-color: #2d2f45;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 1em 2em;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  /* line 293, main.scss */
+  footer {
+    font-size: 1em;
+    position: static;
+  }
+}
+
+/* line 306, main.scss */
+footer a, footer a:visited {
+  color: #f8e461;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  /* line 306, main.scss */
+  footer a, footer a:visited {
+    display: block;
+    line-height: 2em;
+    text-align: center;
+  }
+}
+
+/* line 312, main.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 316, main.scss */
+footer a:first-child {
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  /* line 316, main.scss */
+  footer a:first-child {
+    float: none;
+  }
+}
+
+/* line 321, main.scss */
+footer a:first-child + a {
+  margin-right: 1em;
+}
+@media only screen and (max-width: 768px) {
+  /* line 321, main.scss */
+  footer a:first-child + a {
+    margin-right: 0;
+  }
+}
+
+/* line 326, main.scss */
+p.btn {
+  margin: 3em auto;
+  text-align: center;
+}
+
+/* line 331, main.scss */
+p.btn a, p.btn a:visited {
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  background-color: #f8e461;
+  color: #ec2535;
+  cursor: pointer;
+  display: inline;
+  font-family: "Titan One", cursive;
+  font-size: 3em;
+  line-height: 1.3em;
+  padding: 0.3em 0.5em;
+  text-align: center;
+  text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+  /* line 331, main.scss */
+  p.btn a, p.btn a:visited {
+    font-size: 3em;
+  }
+}
