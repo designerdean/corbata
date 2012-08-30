@@ -14,7 +14,7 @@ My reusable package includes all the things I use in nearly every website I buil
 - Pre-sized favicon and [Apple touch icons](http://gigaom.com/apple/how-to-create-ios-device-home-screen-icons-for-web-sites/)
 - Google Analytics taken from [HTML5 Boilerplate](http://html5boilerplate.com)
 
-## CSS / Sass / Compass (requires an installation of the prereleases of [Sass](http://sass-lang.com/download.html) and [Compass](http://compass-style.org/install/)
+## CSS / Sass / Compass (requires an installation of [Ruby](http://www.ruby-lang.org/en/downloads/) and [Bundler](http://gembundler.com/)
 
 - [Andy Clarke's print.css](http://hardboiledwebdesign.com/code)
 - [Google web fonts CSS tag](http://www.google.com/webfonts)
