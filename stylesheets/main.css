@@ -63,12 +63,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 36, main.scss */
+/* line 47, main.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 51, main.scss */
 html {
   height: 100%;
 }
 
-/* line 40, main.scss */
+/* line 55, main.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -76,21 +83,12 @@ body {
   line-height: 1.5em;
 }
 
-/* line 72, main.scss */
+/* line 87, main.scss */
 img {
   max-width: 100%;
 }
 
-/* If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover */
-/* Apply box-sizing: border-box to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw */
-/* line 124, main.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 134, main.scss */
+/* line 143, main.scss */
 .ancient {
   background: #2c98d6;
   border-bottom: 1px solid #ffffff;
@@ -105,7 +103,7 @@ img {
   z-index: 100;
 }
 
-/* line 149, main.scss */
+/* line 158, main.scss */
 .ancient a,
 .ancient a:visited {
   color: #ffffff;
@@ -113,7 +111,7 @@ img {
 }
 
 @media print {
-  /* line 158, main.scss */
+  /* line 167, main.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -122,52 +120,49 @@ img {
     text-shadow: none !important;
   }
 
-  /* line 166, main.scss */
+  /* line 175, main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 170, main.scss */
+  /* line 179, main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 174, main.scss */
+  /* line 183, main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  /* line 184, main.scss */
+  /* line 191, main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 189, main.scss */
+  /* line 196, main.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 194, main.scss */
+  /* line 201, main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 199, main.scss */
+  /* line 206, main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 203, main.scss */
+  /* line 210, main.scss */
   img {
     max-width: 100% !important;
   }
@@ -176,7 +171,7 @@ img {
     margin: 0.5cm;
 }
 
-  /* line 213, main.scss */
+  /* line 220, main.scss */
   p,
   h2,
   h3 {
@@ -184,7 +179,7 @@ img {
     widows: 3;
   }
 
-  /* line 219, main.scss */
+  /* line 226, main.scss */
   h2,
   h3 {
     page-break-after: avoid;

@@ -6,6 +6,7 @@
 @import "compass/typography";
 @import "compass/utilities";
 @import "compass/layout";
+@import "susy";
 
 // Media Queries Sass			- http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 // Media Queries Library	- http://css-tricks.com/snippets/css/media-queries-for-standard-devices
@@ -13,7 +14,7 @@
 $break-handhelds: 320px;
 $break-small: 480px;
 $break-medium: 768px;
-$break-large: 1100px;
+$break-large: 1200px;
 
 @mixin respond-to($media) {
   @if $media == handhelds {
@@ -30,8 +31,22 @@ $break-large: 1100px;
   }
 }
 
+// Susy
+// ==========================================================================
+
+$total-columns: 12; // 12 columns
+$column-width: 5.5em; // columns are 4em wide
+$gutter-width: 1em; // with 1em gutters
+$grid-padding: 1em; // and 1em padding on the grid container
+
 // HTML & Body
 // ==========================================================================
+
+// Apply box-sizing: border-box to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw
+
+* {
+	@include box-sizing(border-box);
+}
 
 html {
   height: 100%;
@@ -80,7 +95,7 @@ a, a:visited {
 	
 }
 
-/* If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover */
+// If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover
 
 a:hover {
 
@@ -118,12 +133,6 @@ figcaption {
 
 // Content
 // ==========================================================================
-
-/* Apply box-sizing: border-box to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw */
-
-* {
-	@include box-sizing(border-box);
-}
 
 // Page - [Name]
 // ==========================================================================
@@ -175,9 +184,7 @@ figcaption {
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+    // Don't show links for images, or javascript/internal links
 
     .ir a:after,
     a[href^="javascript:"]:after,
