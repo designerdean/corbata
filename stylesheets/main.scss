@@ -6,7 +6,6 @@
 @import "compass/typography";
 @import "compass/utilities";
 @import "compass/layout";
-@import "susy";
 
 // Media Queries Sass     - http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 // Media Queries Library  - http://css-tricks.com/snippets/css/media-queries-for-standard-devices
@@ -30,14 +29,6 @@ $break-large: 1200px;
     @media only screen and (max-width: $break-large) { @content; }
   }
 }
-
-// Susy
-// ==========================================================================
-
-$total-columns: 12; // 12 columns
-$column-width: 5.5em; // columns are 4em wide
-$gutter-width: 1em; // with 1em gutters
-$grid-padding: 1em; // and 1em padding on the grid container
 
 // HTML & Body
 // ==========================================================================
