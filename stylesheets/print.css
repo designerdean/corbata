@@ -1,0 +1,75 @@
+@media print {
+  /* line 3, print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 11, print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 15, print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 19, print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 27, print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 32, print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 37, print.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 42, print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 46, print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 56, print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 62, print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
