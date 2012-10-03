@@ -30,7 +30,7 @@ $break-large: 1200px;
   }
 }
 
-// HTML & Body
+// HTML / Body / Containers
 // ==========================================================================
 
 // Apply box-sizing: border-box to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw
@@ -45,9 +45,9 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 100%; // 16px
   height: 100%;
-  line-height: 1.5em;
+  line-height: 1.5;
 }
 
 // Headings
