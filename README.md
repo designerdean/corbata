@@ -16,8 +16,7 @@ My reusable package includes all the things I use in nearly every website I buil
 
 ## CSS / Sass / Compass (requires an installation of [Ruby](http://www.ruby-lang.org/en/downloads/) and [Bundler](http://gembundler.com/))
 
-- [Andy Clarke's print.css](http://hardboiledwebdesign.com/code)
-- [Google web fonts CSS tag](http://www.google.com/webfonts)
+- [HTML5 Boilerplate's print styles inlined to avoid required HTTP connection](http://www.phpied.com/delay-loading-your-print-css/) 
 - [Nested Media Queries](http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32)
 - An attempt to follow Nicolas Gallagher's [idiomatic CSS guidelines](https://github.com/necolas/idiomatic-css) for stylesheet organization
 
