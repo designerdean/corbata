@@ -1,31 +1,43 @@
-// Compass / Imports / SASS
+// Compass / Sass
 // ==========================================================================
 
 @import "compass"; // Includes CSS3, Typography, Utilities
 @import "compass/layout";
 @import "compass/reset";
 
-// Media Queries Sass - http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+// Desktop-First Media Queries - If using, delete "Mobile First" section
 
-$break-handhelds: 320px;
-$break-small: 480px;
-$break-medium: 768px;
-$break-large: 1200px;
-
-@mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $break-handhelds) { @content; }
+@mixin breakpoint($point) {
+  @if $point == mama-bear {
+    @media (max-width: 1200px) { @content; }
   }
-  @else if $media == small-screens {
-    @media only screen and (max-width: $break-small) { @content; }
+  @if $point == brother-bear {
+    @media (max-width: 800px) { @content; }
   }
-  @else if $media == medium-screens {
-    @media only screen and (max-width: $break-medium) { @content; }
-  }
-  @else if $media == wide-screens {
-    @media only screen and (max-width: $break-large) { @content; }
+  @if $point == sister-bear {
+    @media (max-width: 480px) { @content; }
   }
 }
+
+// Mobile-First Media Queries - If using, delete "Desktop First" section
+
+@mixin breakpoint($point) {
+  @if $point == brother-bear {
+    @media (min-width: 480px) { @content; }
+  }
+  @if $point == mama-bear {
+    @media (min-width: 800px) { @content; }
+  }
+  @if $point == papa-bear {
+    @media (min-width: 1200px) { @content; }
+  }
+}
+
+// Font Stacks
+
+@mixin font-stack-brand {}
+@mixin font-stack-headers {}
+@mixin font-stack-body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
 
 // HTML / Body / Containers
 // ==========================================================================
@@ -41,10 +53,12 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @include font-stack-body;
   font-size: 100%; // 16px
   height: 100%;
   line-height: 1.5;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
 // Headings
@@ -58,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 // ==========================================================================
 
 p {
-  
+
 }
 
 ul, ol {
