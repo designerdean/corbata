@@ -88,7 +88,7 @@ img {
   max-width: 100%;
 }
 
-/* line 131, main.scss */
+/* line 121, main.scss */
 .ancient {
   background: #2c98d6;
   border-bottom: 1px solid #ffffff;
@@ -103,7 +103,7 @@ img {
   z-index: 100;
 }
 
-/* line 146, main.scss */
+/* line 136, main.scss */
 .ancient a,
 .ancient a:visited {
   color: #ffffff;
