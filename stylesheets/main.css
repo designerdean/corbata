@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,62 +20,62 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../usr/local/Cellar/ruby/1.9.3-p194/lib/ruby/gems/1.9.1/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 38, main.scss */
+/* line 35, main.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 42, main.scss */
+/* line 39, main.scss */
 html {
   height: 100%;
 }
 
-/* line 46, main.scss */
+/* line 43, main.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -83,12 +83,12 @@ body {
   line-height: 1.5;
 }
 
-/* line 78, main.scss */
+/* line 75, main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 134, main.scss */
+/* line 131, main.scss */
 .ancient {
   background: #2c98d6;
   border-bottom: 1px solid #ffffff;
@@ -103,7 +103,7 @@ img {
   z-index: 100;
 }
 
-/* line 149, main.scss */
+/* line 146, main.scss */
 .ancient a,
 .ancient a:visited {
   color: #ffffff;

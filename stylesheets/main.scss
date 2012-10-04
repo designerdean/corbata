@@ -1,14 +1,11 @@
 // Compass / Imports / SASS
 // ==========================================================================
 
-@import "compass/reset";
-@import "compass/css3";
-@import "compass/typography";
-@import "compass/utilities";
+@import "compass"; // Includes CSS3, Typography, Utilities
 @import "compass/layout";
+@import "compass/reset";
 
-// Media Queries Sass     - http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
-// Media Queries Library  - http://css-tricks.com/snippets/css/media-queries-for-standard-devices
+// Media Queries Sass - http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
 
 $break-handhelds: 320px;
 $break-small: 480px;
@@ -65,7 +62,7 @@ p {
 }
 
 ul, ol {
-  
+
 }
 
 blockquote {
@@ -83,7 +80,7 @@ img {
 // ==========================================================================
 
 a, a:visited {
-  
+
 }
 
 // If possible, avoid using the hover pseudo class due to touch devices - http://trentwalton.com/2010/07/05/non-hover
