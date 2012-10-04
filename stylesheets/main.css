@@ -81,16 +81,14 @@ body {
   font-size: 100%;
   height: 100%;
   line-height: 1.5;
-  margin: 0 auto;
-  max-width: 90%;
 }
 
-/* line 89, main.scss */
+/* line 87, main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 127, main.scss */
+/* line 125, main.scss */
 .ancient {
   background: #2c98d6;
   border-bottom: 1px solid #ffffff;
@@ -105,7 +103,7 @@ img {
   z-index: 100;
 }
 
-/* line 142, main.scss */
+/* line 140, main.scss */
 .ancient a,
 .ancient a:visited {
   color: #ffffff;
