@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.3em;
   height: 100%;
   line-height: 1.5em;
 }
@@ -227,7 +227,7 @@ figcaption {
 body {
   background-color: #ddf1fb;
   color: #2d2f45;
-  @include respond-to(medium-screens) {font-size: 0.8em;}
+  @include respond-to(medium-screens) {font-size: 1em;}
 }
 
 .wrapper {
@@ -257,10 +257,10 @@ h1 {
   border-bottom: 20px double #ee554b;
   color: #ec2535;
   font-family: "Titan One", cursive;
-  font-size: 5em;
+  font-size: 6em;
   line-height: 1.3em;
   margin-bottom: 0.3em;
-  padding: 0.2em 0;
+  padding: 0 0 0 0;
   text-align: center;
   text-transform: capitalize;
   @include respond-to(small-screens) {font-size: 4em;}
