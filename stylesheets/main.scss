@@ -11,18 +11,18 @@
   @if $point == mama-bear {
     @media (max-width: 75em) { @content; } // 1200px / 16px
   }
-  @if $point == brother-bear {
+  @if $point == goldilocks {
     @media (max-width: 50em) { @content; } // 800px / 16px
   }
-  @if $point == sister-bear {
+  @if $point == baby-bear {
     @media (max-width: 30em) { @content; } // 480px / 16px
   }
 }
 
-// Mobile-First Media Queries - If using, delete "Desktop First" section
+Mobile-First Media Queries - If using, delete "Desktop First" section
 
 @mixin breakpoint($point) {
-  @if $point == brother-bear {
+  @if $point == goldilocks {
     @media (min-width: 30em) { @content; } // 480px / 16px
   }
   @if $point == mama-bear {
@@ -35,9 +35,9 @@
 
 // Font Stacks
 
-@mixin font-stack-brand {}
-@mixin font-stack-headers {}
 @mixin font-stack-body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+@mixin font-stack-headers {}
+@mixin font-stack-brand {}
 
 // HTML / Body / Containers
 // ==========================================================================
