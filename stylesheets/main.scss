@@ -19,7 +19,7 @@
   }
 }
 
-Mobile-First Media Queries - If using, delete "Desktop First" section
+// Mobile-First Media Queries - If using, delete "Desktop First" section
 
 @mixin breakpoint($point) {
   @if $point == goldilocks {
