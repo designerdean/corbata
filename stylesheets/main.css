@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 47, main.scss */
-* {
+*, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -103,9 +103,8 @@ img {
   z-index: 100;
 }
 
-/* line 140, main.scss */
-.ancient a,
-.ancient a:visited {
+/* line 139, main.scss */
+.ancient a, .ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
 }
