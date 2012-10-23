@@ -17,6 +17,9 @@
   @if $point == baby-bear {
     @media (max-width: 30em) { @content; } // 480px / 16px
   }
+  @else {
+    @media (min-width: $point) { @content; }  // Custom
+  }
 }
 
 // Mobile-First Media Queries - If using, delete "Desktop First" section
@@ -30,6 +33,9 @@
   }
   @if $point == papa-bear {
     @media (min-width: 75em) { @content; } // 1200px / 16px
+  }
+  @else {
+    @media (min-width: $point) { @content; }  // Custom
   }
 }
 
