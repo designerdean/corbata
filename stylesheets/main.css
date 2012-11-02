@@ -78,17 +78,16 @@ html {
 /* line 66, main.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 100%;
   height: 100%;
   line-height: 1.5;
 }
 
-/* line 98, main.scss */
+/* line 97, main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 136, main.scss */
+/* line 135, main.scss */
 .ancient {
   background: #2c98d6;
   border-bottom: 1px solid #ffffff;
@@ -103,7 +102,7 @@ img {
   z-index: 100;
 }
 
-/* line 150, main.scss */
+/* line 149, main.scss */
 .ancient a, .ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
