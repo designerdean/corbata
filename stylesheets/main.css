@@ -63,19 +63,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 53, main.scss */
+/* line 58, main.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 57, main.scss */
+/* line 62, main.scss */
 html {
   height: 100%;
 }
 
-/* line 61, main.scss */
+/* line 66, main.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 100%;
@@ -83,12 +83,12 @@ body {
   line-height: 1.5;
 }
 
-/* line 93, main.scss */
+/* line 98, main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 131, main.scss */
+/* line 136, main.scss */
 .ancient {
   background: #2c98d6;
   border-bottom: 1px solid #ffffff;
@@ -103,7 +103,7 @@ img {
   z-index: 100;
 }
 
-/* line 145, main.scss */
+/* line 150, main.scss */
 .ancient a, .ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
