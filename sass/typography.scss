@@ -1,0 +1,51 @@
+// Headings
+// ==========================================================================
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+// Misc
+// ==========================================================================
+
+p {
+
+}
+
+ul, ol {
+
+}
+
+blockquote {
+
+}
+
+// Links & Buttons
+// ==========================================================================
+
+a {
+  // @include link-colors($normal, $hover, $active, $visited, $focus)
+}
+
+// Ancient Browser Alert
+// ==========================================================================
+
+.ancient {
+  background: #666666;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  margin: 0;
+  padding: 0.5em 1em;
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  text-align: center;
+  z-index: 1000000;
+}
+
+.ancient a,
+.ancient a:visited {
+  color: #ffffff;
+  text-decoration: underline;
+}

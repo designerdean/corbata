@@ -1,0 +1,47 @@
+// Sass Mixins
+// ==========================================================================
+
+// Media Queries - Mobile-First Media Queries - If using, delete "Desktop First" section
+
+@mixin breakpoint($point) {
+  @if $point == goldilocks {
+    @media (min-width: 30em) { @content; } // 480px / 16px
+  }
+  @if $point == mama-bear {
+    @media (min-width: 50em) { @content; } // 800px / 16px
+  }
+  @if $point == papa-bear {
+    @media (min-width: 75em) { @content; } // 1200px / 16px
+  }
+  @else {
+    @media (min-width: $point) { @content; }  // Custom
+  }
+}
+
+// Media Queries - Desktop-First Media Queries - If using, delete "Mobile First" section
+
+@mixin breakpoint($point) {
+  @if $point == mama-bear {
+    @media (max-width: 75em) { @content; } // 1200px / 16px
+  }
+  @if $point == goldilocks {
+    @media (max-width: 50em) { @content; } // 800px / 16px
+  }
+  @if $point == baby-bear {
+    @media (max-width: 30em) { @content; } // 480px / 16px
+  }
+  @else {
+    @media (min-width: $point) { @content; }  // Custom
+  }
+}
+
+// Disable user-select click highlight
+
+@mixin user-select($none) {
+  $none: unquote($none);
+  @include experimental(user-select, $none, -moz, -webkit, not -o, not -ms, -khtml, official);
+}
+
+// Sass Variables
+// ==========================================================================
+

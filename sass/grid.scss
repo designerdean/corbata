@@ -1,0 +1,14 @@
+// Apply box-sizing: border-box to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw
+
+*, *:after, *:before {
+  @include box-sizing(border-box);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  line-height: 1.5;
+}

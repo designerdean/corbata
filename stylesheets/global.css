@@ -63,33 +63,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 58, main.scss */
+/* line 3, ../sass/grid.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 62, main.scss */
+/* line 7, ../sass/grid.scss */
 html {
   height: 100%;
 }
 
-/* line 66, main.scss */
+/* line 11, ../sass/grid.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
   line-height: 1.5;
 }
 
-/* line 97, main.scss */
-img {
-  max-width: 100%;
-}
-
-/* line 135, main.scss */
+/* line 33, ../sass/typography.scss */
 .ancient {
-  background: #2c98d6;
+  background: #666666;
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
   margin: 0;
@@ -99,17 +93,23 @@ img {
   right: 0;
   left: 0;
   text-align: center;
-  z-index: 100;
+  z-index: 1000000;
 }
 
-/* line 149, main.scss */
-.ancient a, .ancient a:visited {
+/* line 48, ../sass/typography.scss */
+.ancient a,
+.ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
 }
 
+/* line 1, ../sass/images.scss */
+img {
+  max-width: 100%;
+}
+
 @media print {
-  /* line 3, print.scss */
+  /* line 5, ../sass/print.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -118,49 +118,49 @@ img {
     text-shadow: none !important;
   }
 
-  /* line 11, print.scss */
+  /* line 13, ../sass/print.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 15, print.scss */
+  /* line 17, ../sass/print.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 19, print.scss */
+  /* line 21, ../sass/print.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 27, print.scss */
+  /* line 29, ../sass/print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 32, print.scss */
+  /* line 34, ../sass/print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 37, print.scss */
+  /* line 39, ../sass/print.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 42, print.scss */
+  /* line 44, ../sass/print.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 46, print.scss */
+  /* line 48, ../sass/print.scss */
   img {
     max-width: 100% !important;
   }
@@ -169,7 +169,7 @@ img {
     margin: 0.5cm;
 }
 
-  /* line 56, print.scss */
+  /* line 58, ../sass/print.scss */
   p,
   h2,
   h3 {
@@ -177,7 +177,7 @@ img {
     widows: 3;
   }
 
-  /* line 62, print.scss */
+  /* line 64, ../sass/print.scss */
   h2,
   h3 {
     page-break-after: avoid;
