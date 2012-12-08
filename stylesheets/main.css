@@ -63,37 +63,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 3, ../sass/_grid.scss */
+/* line 3, sass/_grid.scss */
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 7, ../sass/_grid.scss */
+/* line 7, sass/_grid.scss */
 html {
   height: 100%;
 }
-@media (max-width: 50em) {
-  /* line 7, ../sass/_grid.scss */
-  html {
-    background-color: lime;
-  }
-}
-@media (min-width: goldilocks) {
-  /* line 7, ../sass/_grid.scss */
-  html {
-    background-color: lime;
-  }
-}
 
-/* line 12, ../sass/_grid.scss */
+/* line 11, sass/_grid.scss */
 body {
   height: 100%;
   line-height: 1.5;
 }
 
-/* line 33, ../sass/_typography.scss */
+/* line 33, sass/_typography.scss */
 .ancient {
   background: #666666;
   border-bottom: 1px solid #ffffff;
@@ -108,20 +96,20 @@ body {
   z-index: 1000000;
 }
 
-/* line 48, ../sass/_typography.scss */
+/* line 48, sass/_typography.scss */
 .ancient a,
 .ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
 }
 
-/* line 1, ../sass/_images.scss */
+/* line 1, sass/_images.scss */
 img {
   max-width: 100%;
 }
 
 @media print {
-  /* line 5, ../sass/_print.scss */
+  /* line 5, sass/_print.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -130,49 +118,49 @@ img {
     text-shadow: none !important;
   }
 
-  /* line 13, ../sass/_print.scss */
+  /* line 13, sass/_print.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 17, ../sass/_print.scss */
+  /* line 17, sass/_print.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 21, ../sass/_print.scss */
+  /* line 21, sass/_print.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 29, ../sass/_print.scss */
+  /* line 29, sass/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 34, ../sass/_print.scss */
+  /* line 34, sass/_print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 39, ../sass/_print.scss */
+  /* line 39, sass/_print.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 44, ../sass/_print.scss */
+  /* line 44, sass/_print.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 48, ../sass/_print.scss */
+  /* line 48, sass/_print.scss */
   img {
     max-width: 100% !important;
   }
@@ -181,7 +169,7 @@ img {
     margin: 0.5cm;
 }
 
-  /* line 58, ../sass/_print.scss */
+  /* line 58, sass/_print.scss */
   p,
   h2,
   h3 {
@@ -189,7 +177,7 @@ img {
     widows: 3;
   }
 
-  /* line 64, ../sass/_print.scss */
+  /* line 64, sass/_print.scss */
   h2,
   h3 {
     page-break-after: avoid;

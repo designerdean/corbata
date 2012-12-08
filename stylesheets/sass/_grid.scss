@@ -6,7 +6,6 @@
 
 html {
   height: 100%;
-  @include breakpoint(goldilocks) {background-color: lime;}
 }
 
 body {
