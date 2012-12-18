@@ -69,6 +69,10 @@ body {
   line-height: 1.5;
 }
 
+img {
+  max-width: 100%;
+}
+
 .ancient {
   background: #666666;
   border-bottom: 1px solid #ffffff;
@@ -87,10 +91,6 @@ body {
 .ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
 }
 
 @media print {
