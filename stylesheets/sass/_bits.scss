@@ -2,7 +2,6 @@
 // ==========================================================================
 
 // Media Queries - Mobile-First Media Queries - If using, delete "Desktop First" section
-
 @mixin breakpoint($point) {
   @if $point == goldilocks {
     @media (min-width: 30em) { @content; } // 480px / 16px
@@ -19,7 +18,6 @@
 }
 
 // Media Queries - Desktop-First Media Queries - If using, delete "Mobile First" section
-
 @mixin breakpoint($point) {
   @if $point == mama-bear {
     @media (max-width: 75em) { @content; } // 1200px / 16px
@@ -31,12 +29,21 @@
     @media (max-width: 30em) { @content; } // 480px / 16px
   }
   @else {
-    @media (min-width: $point) { @content; }  // Custom
+    @media (max-width: $point) { @content; }  // Custom
   }
 }
 
-// Disable user-select click highlight
+// Media Queries - Retina - http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss & http://www.brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries/
+@mixin image-2x($image, $width, $height) {
+  @media 
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
+    only screen and (min-resolution: 192dpi) { 
+      background-image: url($image);
+      background-size: $width $height;
+    }
+}
 
+// Disable user-select click highlight
 @mixin user-select($none) {
   $none: unquote($none);
   @include experimental(user-select, $none, -moz, -webkit, not -o, not -ms, -khtml, official);
