@@ -73,9 +73,22 @@ img {
   max-width: 100%;
 }
 
+.map *,
+.map *:before,
+.map *:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.map * img,
+.map *:before img,
+.map *:after img {
+  max-width: none;
+}
+
 .ancient {
   background: #666666;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid white;
   color: #ffffff;
   margin: 0;
   padding: 0.5em 1em;
@@ -96,7 +109,7 @@ img {
 @media print {
   * {
     background: transparent !important;
-    color: #000 !important;
+    color: black !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -123,7 +136,7 @@ img {
 
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #999999;
     page-break-inside: avoid;
   }
 

@@ -1,3 +1,13 @@
+// Google Maps
+// ==========================================================================
+
+.map *,
+.map *:before,
+.map *:after {
+  @include box-sizing(content-box);
+  & img {max-width: none;}
+}
+
 // Ancient Browser Alert
 // ==========================================================================
 
