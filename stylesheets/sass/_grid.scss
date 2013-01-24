@@ -1,6 +1,8 @@
 // Apply box-sizing: border-box to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   @include box-sizing(border-box);
 }
 
