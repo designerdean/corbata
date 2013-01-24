@@ -54,7 +54,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-*, *:after, *:before {
+.clear-after:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
