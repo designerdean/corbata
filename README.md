@@ -6,7 +6,7 @@ Corbata is a base layer of rules and conventions that act as a starting point fo
 
 My reusable package includes all the things I use in nearly every website I build:
 
-## Markup &amp; Images
+## Markup & Images
 
 *   [Paul Irish's conditional markup](http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/)
 *   [Viewport Metatag to control layout in mobile browsers](http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/UsingtheViewport/UsingtheViewport.html)
@@ -25,6 +25,8 @@ My reusable package includes all the things I use in nearly every website I buil
 
 *   [Modernizr](http://modernizr.com/)
 *   [jQuery](http://www.jquery.com) (via the [Google Code protocol-less reference](http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/#protocolless))
+
+And a few other things!
 
         [Download](https://github.com/designerdean/corbata/zipball/master)
 
