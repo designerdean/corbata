@@ -77,6 +77,10 @@ body {
   line-height: 1.5;
 }
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -96,7 +100,7 @@ img {
 
 .ancient {
   background: #666666;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffff;
   color: #ffffff;
   margin: 0;
   padding: 0.5em 1em;
@@ -117,7 +121,7 @@ img {
 @media print {
   * {
     background: transparent !important;
-    color: black !important;
+    color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important;
@@ -144,7 +148,7 @@ img {
 
   pre,
   blockquote {
-    border: 1px solid #999999;
+    border: 1px solid #999;
     page-break-inside: avoid;
   }
 
