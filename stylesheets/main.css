@@ -60,6 +60,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both;
 }
 
+.screen-reader {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 *,
 *:after,
 *:before {
@@ -92,6 +98,10 @@ img {
   max-width: 100%;
 }
 
+form {
+  margin: 0;
+}
+
 fieldset {
   border: 0;
   margin: 0;
@@ -111,6 +121,7 @@ textarea {
   border-radius: 0;
   border: 0;
   outline: 0;
+  margin: 0;
   padding: 0.4em 0;
   word-break: normal;
   -webkit-appearance: none;
