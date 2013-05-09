@@ -6,9 +6,37 @@ fieldset {
   padding: 0;
 }
 
+// Reset Inputs
+
+input[type="email"]
+input[type="password"],,
+input[type="search"],
+input[type="text"],
+input[type="url"],
+textarea {
+  @include border-radius(0);
+  border: 0;
+  outline: 0;
+  padding: 0.4em 0;
+  word-break: normal;
+  -webkit-appearance: none;
+}
+
+// Reset Buttons
+
+input[type="button"],
+input[type="submit"],
+input[type="cancel"] {
+  @include border-radius(0);
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  white-space: nowrap;
+}
+
 // Allow only vertical resizing of textareas
 
 textarea {
   resize: vertical;
 }
-

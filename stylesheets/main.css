@@ -98,6 +98,39 @@ fieldset {
   padding: 0;
 }
 
+input[type="email"]
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="url"],
+textarea {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  outline: 0;
+  padding: 0.4em 0;
+  word-break: normal;
+  -webkit-appearance: none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="cancel"] {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  outline: 0;
+  white-space: nowrap;
+}
+
 textarea {
   resize: vertical;
 }
