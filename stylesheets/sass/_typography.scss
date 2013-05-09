@@ -7,6 +7,8 @@
 body {
   @include rotate3d(0, 0, 0, 0); // Fixes the shifting font-weight during CSS transitions
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
   -webkit-font-smoothing: subpixel-antialiased; // Fixes the inconsistent font-weight in Safari
 }
 

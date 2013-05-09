@@ -74,15 +74,41 @@ html {
 
 body {
   height: 100%;
-  line-height: 1.5;
 }
 
 body {
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  -moz-transform: rotate3d(0, 0, 0, 0);
+  -ms-transform: rotate3d(0, 0, 0, 0);
+  -o-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 img {
   max-width: 100%;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 .map *,
