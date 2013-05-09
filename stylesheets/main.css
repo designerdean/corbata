@@ -60,6 +60,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both;
 }
 
+.default-box-model, .map *,
+.map *:before,
+.map *:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
 .screen-reader {
   position: absolute;
   top: -9999px;
@@ -155,13 +163,6 @@ hr {
   padding: 0;
 }
 
-.map *,
-.map *:before,
-.map *:after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
 .map * img,
 .map *:before img,
 .map *:after img {

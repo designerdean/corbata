@@ -60,6 +60,10 @@
   }
 }
 
+.default-box-model {
+  @include box-sizing(content-box);
+}
+
 .screen-reader {
   position: absolute;
     top: -9999px;
