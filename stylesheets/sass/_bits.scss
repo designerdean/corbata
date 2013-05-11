@@ -1,8 +1,10 @@
 // Sass Mixins
 // ==========================================================================
 
-// Media Queries - Mobile-First - If using, delete "Desktop First" section
-@mixin breakpoint($point) {
+// At-Least & Until: http://codepen.io/imathis/pen/BDzcI
+
+// Media Queries - Mobile-First
+@mixin at-least($point) {
   @if $point == goldilocks {
     @media (min-width: 30em) { @content; } // 480px / 16px
   }
@@ -17,8 +19,8 @@
   }
 }
 
-// Media Queries - Desktop-First - If using, delete "Mobile First" section
-@mixin breakpoint($point) {
+// Media Queries - Desktop-First
+@mixin until($point) {
   @if $point == mama-bear {
     @media (max-width: 75em) { @content; } // 1200px / 16px
   }
