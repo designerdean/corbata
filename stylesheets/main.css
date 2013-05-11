@@ -102,6 +102,24 @@ body {
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+@font-face {
+  font-family: "Icomoon";
+  src: url('/stylesheets/fonts/Icomoon.eot');
+  src: url('/stylesheets/fonts/Icomoon.eot?#iefix') format('eot'), url('/stylesheets/fonts/Icomoon.ttf') format('truetype'), url('/stylesheets/fonts/Icomoon.woff') format('woff'), url('/stylesheets/fonts/Icomoon.svg') format('svg');
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  content: attr(data-icon);
+  font-family: 'Icomoon';
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
 img {
   max-width: 100%;
 }
