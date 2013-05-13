@@ -54,7 +54,7 @@
 // Sass Extends
 // ==========================================================================
 
-.clear-after {
+%clear-after {
   &:after {
     content: "";
     display: table;
@@ -62,7 +62,7 @@
   }
 }
 
-.default-box-model {
+%default-box-model {
   @include box-sizing(content-box);
 }
 

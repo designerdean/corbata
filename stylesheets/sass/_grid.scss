@@ -6,6 +6,7 @@
 }
 
 html {
+  @extend %clear-after;
   height: 100%;
 }
 

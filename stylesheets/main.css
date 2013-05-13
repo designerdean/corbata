@@ -54,13 +54,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-.clear-after:after {
+html:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.default-box-model, .map *,
+.map *,
 .map *:before,
 .map *:after {
   -webkit-box-sizing: content-box;
