@@ -54,12 +54,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-html:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .map *,
 .map *:before,
 .map *:after {

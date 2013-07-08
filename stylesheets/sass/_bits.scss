@@ -54,10 +54,17 @@
 // Sass Extends
 // ==========================================================================
 
+// Clearfix: http://web-design-weekly.com/2013/05/12/handy-sass-mixins
 %clear-after {
+  & {
+    *zoom: 1;
+  }
+  &:before,
   &:after {
     content: "";
     display: table;
+  }
+  &:after {
     clear: both;
   }
 }
