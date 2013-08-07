@@ -90,10 +90,13 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+html {
+  font-size: 100%;
   line-height: 1.5;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -137,8 +140,6 @@ input[type="url"],
 textarea {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
   border-radius: 0;
   border: 0;
   outline: 0;
@@ -153,8 +154,6 @@ input[type="submit"],
 input[type="cancel"] {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
   border-radius: 0;
   border: 0;
   cursor: pointer;

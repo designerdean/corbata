@@ -4,10 +4,22 @@
 // Font Stacks & Global Font
 // ==========================================================================
 
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+// Font-Sizing (REMs with Pixel Fallback - http://designbyjoel.com/blog/2013-02-28-sass-rems)
+
+@mixin font-size($size: 1, $line: $size * 1.5) {
+  font-size: ($size * 16) + px;
+  line-height: ($line * 16) + px;
+  font-size: $size + rem;
+  line-height: $line + rem;
+}
+
+html {
+  font-size: 100%; // Change this if you want your root font-size bigger/smaller
   line-height: 1.5;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased; // Fixes the inconsistent font-weight in Safari
 }
 
