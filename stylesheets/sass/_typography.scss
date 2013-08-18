@@ -25,7 +25,7 @@
 
 // Font-Size & Line-Height (http://designbyjoel.com/blog/2013-02-28-sass-rems)
 
-@mixin font-size($size: 1, $line: $size * 1.5) {
+@mixin rem-font-size($size: 1, $line: $size * 1.5) {
   font-size: ($size * 16) + px;
   line-height: ($line * 16) + px;
   font-size: $size + rem;
