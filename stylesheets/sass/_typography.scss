@@ -1,10 +1,29 @@
-// @font-face
+// @font-face & Font Stacks
 // ==========================================================================
 
-// Font Stacks & Global Font
+// Insert @import from Google, Typekit, Fonts.com, etc.
+
+// Font Name
+
+@include font-face("Font Name",
+  font-files(
+    "FontName.ttf",
+    "FontName.woff",
+    "FontName.svg"),
+    "FontName.eot"
+);
+
+// Font Stacks
+
+%font-body {font-family: Helvetica, Arial, sans-serif;}
+%font-body-bold {font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
+%font-headings {font-family: Helvetica, Arial, sans-serif;}
+%font-headings-bold {font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
+
+// REM Font-Sizing (w/Pixel Fallback)
 // ==========================================================================
 
-// Font-Sizing (REMs with Pixel Fallback - http://designbyjoel.com/blog/2013-02-28-sass-rems)
+// Font-Size & Line-Height (http://designbyjoel.com/blog/2013-02-28-sass-rems)
 
 @mixin font-size($size: 1, $line: $size * 1.5) {
   font-size: ($size * 16) + px;
@@ -13,13 +32,23 @@
   line-height: $line + rem;
 }
 
+// Font-Sizing (http://designbyjoel.com/blog/2013-02-28-sass-rems)
+
+@mixin rem-fallback ($property, $value) {
+  #{$property}: $value * 16px;
+  #{$property}: #{$value}rem;
+}
+
+// Global Font
+// ==========================================================================
+
 html {
   font-size: 100%; // Change this if you want your root font-size bigger/smaller
   line-height: 1.5;
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  @extend %font-body;
   -webkit-font-smoothing: subpixel-antialiased; // Fixes the inconsistent font-weight in Safari
 }
 
