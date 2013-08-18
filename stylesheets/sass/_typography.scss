@@ -20,25 +20,6 @@
 %font-headings {font-family: Helvetica, Arial, sans-serif;}
 %font-headings-bold {font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
 
-// REM Font-Sizing (w/Pixel Fallback)
-// ==========================================================================
-
-// Font-Size & Line-Height (http://designbyjoel.com/blog/2013-02-28-sass-rems)
-
-@mixin rem-font-size($size: 1, $line: $size * 1.5) {
-  font-size: ($size * 16) + px;
-  line-height: ($line * 16) + px;
-  font-size: $size + rem;
-  line-height: $line + rem;
-}
-
-// Font-Sizing (http://designbyjoel.com/blog/2013-02-28-sass-rems)
-
-@mixin rem-fallback ($property, $value) {
-  #{$property}: $value * 16px;
-  #{$property}: #{$value}rem;
-}
-
 // Global Font
 // ==========================================================================
 
