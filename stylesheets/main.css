@@ -90,13 +90,24 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Font Name";
+  src: url('/stylesheets/fonts/FontName.eot');
+  src: url('/stylesheets/fonts/FontName.eot?#iefix') format('eot'), url('/stylesheets/fonts/FontName.ttf') format('truetype'), url('/stylesheets/fonts/FontName.woff') format('woff'), url('/stylesheets/fonts/FontName.svg') format('svg');
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 html {
   font-size: 100%;
   line-height: 1.5;
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.6em;
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
