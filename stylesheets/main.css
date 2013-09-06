@@ -77,16 +77,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transform: rotate3d(0, 0, 0, 0);
-  -moz-transform: rotate3d(0, 0, 0, 0);
-  -ms-transform: rotate3d(0, 0, 0, 0);
-  -o-transform: rotate3d(0, 0, 0, 0);
-  transform: rotate3d(0, 0, 0, 0);
   overflow-x: hidden;
 }
 

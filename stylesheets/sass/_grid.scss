@@ -10,7 +10,5 @@ html {
 }
 
 body {
-  @include backface-visibility(hidden); // Fixes flickering of objects during CSS transitions
-  @include rotate3d(0, 0, 0, 0); // Fixes font-weight shifting during CSS transitions
   overflow-x: hidden;
 }
