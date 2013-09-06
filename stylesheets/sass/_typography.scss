@@ -15,10 +15,10 @@
 
 // Font Stacks
 
-%font-body {font-family: Helvetica, Arial, sans-serif;}
-%font-body-bold {font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
-%font-headings {font-family: Helvetica, Arial, sans-serif;}
-%font-headings-bold {font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
+%font-base {font-family: Helvetica, Arial, sans-serif;}
+%font-base-bold {font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
+%font-alt {font-family: Helvetica, Arial, sans-serif;}
+%font-alt-bold {font-family: Helvetica, Arial, sans-serif; font-weight: bold;}
 
 // Global Font
 // ==========================================================================
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  @extend %font-body;
+  @extend %font-base;
   font-size: 1.2em; // Set global font-size here
   line-height: 1.6em; // Set global line-height here
   -webkit-font-smoothing: subpixel-antialiased; // Fixes the inconsistent font-weight in Safari
