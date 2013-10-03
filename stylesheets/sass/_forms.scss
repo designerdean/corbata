@@ -11,6 +11,10 @@ fieldset {
   padding: 0;
 }
 
+label {
+
+}
+
 input[type="email"]
 input[type="password"],,
 input[type="search"],
@@ -21,13 +25,20 @@ textarea {
   @include border-radius(0);
   border: 0;
   margin: 0;
-  padding: 0.4em 0;
+  padding: 0.4em;
   word-break: normal;
   -webkit-appearance: none;
 }
 
 textarea {
   resize: vertical;
+}
+
+// Buttons
+// ==========================================================================
+
+.btn-row {
+
 }
 
 input[type="button"],
@@ -39,14 +50,3 @@ input[type="cancel"] {
   display: inline-block;
   white-space: nowrap;
 }
-
-// Buttons
-// ==========================================================================
-
-// Custom Form Styling
-// ==========================================================================
- 
- label {
-
- }
-
