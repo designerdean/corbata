@@ -21,35 +21,28 @@
 	<body>
     
     <div class="wrapper">
+
       <h1>Corbata</h1>
-      <p>Corbata is a base layer of rules and conventions that act as a starting point for HTML, CSS, and JavaScript for your own projects. I got the idea from <a href="http://colly.com/comments/the_process_toolbox_part_seven_convention/" target="_blank">Simon Collison's reusable package concept</a>. He defines a reusable package as being:</p>
-      <blockquote>a bumper compendium of cascading and connected CSS files, naming conventions, modules, plugins and library scripts that ensure any project led or worked on by any member(s) of a team will stay on convention, and be simpler for anyone else to step into and work with at any time.</blockquote>
-      
-      <p>My reusable package includes all the things I use in nearly every website I build:</p>
-      <h2>Markup &amp; Images</h2>
+
+      <p>Corbata is a base layer of rules and conventions that act as a starting point for HTML, CSS, and JavaScript for your own projects. I got the idea from <a href="http://colly.com/comments/the_process_toolbox_part_seven_convention/">Simon Collison's reusable package concept</a>. He defines a reusable package as being:</p>
+
+      <blockquote>
+        a bumper compendium of cascading and connected CSS files, naming conventions, modules, plugins and library scripts that ensure any project led or worked on by any member(s) of a team will stay on convention, and be simpler for anyone else to step into and work with at any time.
+      </blockquote>
+
+      <p>Outside of the common (and some custom) CSS resets, Corbata does not have any default styling. It's just meant to act as a starting place for responsive and organized HTML as well as DRY, readable, and modular CSS (through Sass and Compass). It allows for CoffeeScript. Corbata is similar to, and inspired by, <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>.</p>
+
+      <p>Corbata uses a Gemfile to manage Sass, Compass, and CoffeeScript. So, you will need to install a few things:</p>
+
       <ul>
-        <li><a href="http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/" target="_blank">Paul Irish's conditional markup</a></li>
-        <li><a href="http://developer.apple.com/library/safari/#documentation/appleapplications/reference/safariwebcontent/UsingtheViewport/UsingtheViewport.html" target="_blank">Viewport Metatag to control layout in mobile browsers</a></li>
-        <li>Markup prompting &lt;IE8 users to <a href="http://browsehappy.com/" target="_blank">upgrade browsers</a> or <a href="http://www.google.com/chromeframe/?redirect=true&prefersystemlevel=true" target="_blank">install Google Chrome Frame</a></li> 
-        <li>Pre-sized favicon and <a href="http://gigaom.com/apple/how-to-create-ios-device-home-screen-icons-for-web-sites/" target="_blank">Apple touch icons</a></li>
-        <li>Google Analytics taken from <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a></li>
+        <li><a href="https://www.ruby-lang.org/en/downloads" target="_blank">Ruby</a></li>
+        <li><a href="http://bundler.io" target="_blank">Bundler</a></li>
+        <li><a href="http://thesassway.com/beginner/getting-started-with-sass-and-compass" target="_blank">Sass &amp; Compass</a></li>
+        <li><a href="http://coffeescript.org" target="_blank">CoffeeScript</a></li>
       </ul>
-      <h2>CSS / Compass / Sass (requires an installation of <a href="http://www.ruby-lang.org/en/downloads/" target="_blank">Ruby</a> and <a href="http://gembundler.com/" target="_blank">Bundler</a>)</h2>
-      <ul>
-        <li>Print CSS taken from <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a>; this is placed inline at the bottom of the main stylesheet <a href="http://www.phpied.com/delay-loading-your-print-css/" target="_blank">to avoid required HTTP connection</a></li>
-        <li><a href="http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32" target="_blank">Nested Media Queries</a> (Sass)</li>
-        <li>An attempt to follow Nicolas Gallagher's <a href="https://github.com/necolas/idiomatic-css" target="_blank">idiomatic CSS guidelines</a> for stylesheet organization</li>
-        <li>Paul Irish's idea to <a href="http://paulirish.com/2012/box-sizing-border-box-ftw" target="_blank">apply box-sizing: border-box to all elements</a></li>
-      </ul>
-      <h2>JavaScript</h2>
-      <ul>
-        <li><a href="http://modernizr.com/" target="_blank">Modernizr</a></li>
-        <li><a href="http://www.jquery.com" target="_blank">jQuery</a> (via the <a href="http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/#protocolless" target="_blank">Google Code protocol-less reference</a>)</li>
-      </ul>
-      <p>And a few other things!</p>
-      <p class="btn">
-        <a href="https://github.com/designerdean/corbata/zipball/master">Download</a>
-      </p>
+
+      <p>During development, you will need to have terminal watch for changes to your Sass and CoffeeScript files so that they can be compiled to CSS and JavaScript.</p>
+
       <footer>
         <a href="https://github.com/designerdean/corbata">View on GitHub</a>
         <a href="https://twitter.com/designer_dean" target="_blank">Follow me on Twitter</a>
