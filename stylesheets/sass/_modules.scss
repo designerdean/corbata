@@ -13,9 +13,9 @@ hr {
 // Google Maps
 // ==========================================================================
 
-.map *,
-.map *:before,
-.map *:after {
+// Don't reset the *:before & *:after
+
+.map * {
   @extend %default-box-model;
   & img {max-width: none;}
 }
