@@ -1,3 +1,4 @@
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,55 +20,64 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p448@global/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-.map *,
-.map *:before,
-.map *:after {
+/* line 72, sass/_bits.scss */
+.map * {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
+/* line 83, sass/_bits.scss */
 .screen-reader {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
+/* line 4, sass/_grid.scss */
 *,
 *:after,
 *:before {
@@ -76,6 +86,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
+/* line 12, sass/_grid.scss */
 body {
   overflow-x: hidden;
 }
@@ -86,14 +97,17 @@ body {
   src: url('/stylesheets/fonts/FontName.eot?#iefix') format('eot'), url('/stylesheets/fonts/FontName.ttf') format('truetype'), url('/stylesheets/fonts/FontName.woff') format('woff'), url('/stylesheets/fonts/FontName.svg') format('svg');
 }
 
+/* line 18, sass/_typography.scss */
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* line 26, sass/_typography.scss */
 html {
   font-size: 100%;
 }
 
+/* line 30, sass/_typography.scss */
 body {
   font-size: 1.2em;
   line-height: 1.6em;
@@ -107,6 +121,7 @@ body {
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 50, sass/_typography.scss */
 [data-icon]:before {
   content: attr(data-icon);
   font-family: 'Icomoon';
@@ -118,20 +133,24 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* line 1, sass/_images.scss */
 img {
   max-width: 100%;
 }
 
+/* line 4, sass/_forms.scss */
 form {
   margin: 0;
 }
 
+/* line 8, sass/_forms.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
+/* line 24, sass/_forms.scss */
 input[type="email"]
 input[type="password"],
 input[type="search"],
@@ -141,6 +160,8 @@ input[type="url"],
 textarea {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
   border: 0;
   margin: 0;
@@ -149,15 +170,19 @@ textarea {
   -webkit-appearance: none;
 }
 
+/* line 33, sass/_forms.scss */
 textarea {
   resize: vertical;
 }
 
+/* line 46, sass/_forms.scss */
 input[type="button"],
 input[type="submit"],
 input[type="cancel"] {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
   border: 0;
   cursor: pointer;
@@ -165,6 +190,12 @@ input[type="cancel"] {
   white-space: nowrap;
 }
 
+/* line 1, sass/_header.scss */
+header {
+  background-color: teal;
+}
+
+/* line 4, sass/_modules.scss */
 hr {
   display: block;
   height: 1px;
@@ -174,12 +205,12 @@ hr {
   padding: 0;
 }
 
-.map * img,
-.map *:before img,
-.map *:after img {
+/* line 20, sass/_modules.scss */
+.map * img {
   max-width: none;
 }
 
+/* line 26, sass/_modules.scss */
 .ancient {
   background: #666666;
   border-bottom: 1px solid #ffffff;
@@ -194,6 +225,7 @@ hr {
   z-index: 1000000;
 }
 
+/* line 41, sass/_modules.scss */
 .ancient a,
 .ancient a:visited {
   color: #ffffff;
@@ -201,6 +233,7 @@ hr {
 }
 
 @media print {
+  /* line 5, sass/_print.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -209,41 +242,49 @@ hr {
     text-shadow: none !important;
   }
 
+  /* line 13, sass/_print.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
+  /* line 17, sass/_print.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
+  /* line 21, sass/_print.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
+  /* line 29, sass/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
+  /* line 34, sass/_print.scss */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
+  /* line 39, sass/_print.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
+  /* line 44, sass/_print.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
+  /* line 48, sass/_print.scss */
   img {
     max-width: 100% !important;
   }
@@ -252,6 +293,7 @@ hr {
     margin: 0.5cm;
 }
 
+  /* line 58, sass/_print.scss */
   p,
   h2,
   h3 {
@@ -259,6 +301,7 @@ hr {
     widows: 3;
   }
 
+  /* line 64, sass/_print.scss */
   h2,
   h3 {
     page-break-after: avoid;
