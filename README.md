@@ -14,3 +14,5 @@ Corbata uses a Gemfile to manage Sass, Compass, and CoffeeScript. So, you will n
 - [CoffeeScript](http://coffeescript.org)
 
 During development, you will need to have terminal watch for changes to your Sass and CoffeeScript files so that they can be compiled to CSS and JavaScript.
+
+If you prefer Grunt over Ruby, [check out the the Grunt version of Corbata](https://github.com/designerdean/corbata/tree/grunt)
