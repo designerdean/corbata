@@ -1,4 +1,5 @@
-# Corbata
+Corbata
+========================
 
 Corbata is a base layer of rules and conventions that act as a starting point for HTML, CSS, and JavaScript for your own projects. I got the idea from [Simon Collison's reusable package concept](http://colly.com/comments/the_process_toolbox_part_seven_convention/). He defines a reusable package as being:
 
