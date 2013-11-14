@@ -80,10 +80,15 @@
   @include translate3d(0, 0, 0, 0);
 }
 
-.screen-reader {
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
-    top: -9999px;
-    left: -9999px;
+  width: 1px;
 }
 
 // Sass Variables

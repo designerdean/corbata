@@ -71,10 +71,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 83, sass/_bits.scss */
-.screen-reader {
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
-  top: -9999px;
-  left: -9999px;
+  width: 1px;
 }
 
 /* line 4, sass/_grid.scss */
