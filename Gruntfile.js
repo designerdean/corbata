@@ -24,6 +24,35 @@ module.exports = function(grunt) {
       }
     },
 
+    // Modernizr
+    modernizr: {
+      "devFile" : "javascripts/vendor/modernizr-dev.js",
+      "outputFile" : "javascripts/vendor/modernizr-custom.js",
+      // Based on default settings on http://modernizr.com/download/
+      "extra" : {
+          "shiv" : true,
+          "printshiv" : false,
+          "load" : true,
+          "mq" : false,
+          "cssclasses" : true
+      },
+      // Based on default settings on http://modernizr.com/download/
+      "extensibility" : {
+          "addtest" : false,
+          "prefixed" : false,
+          "teststyles" : false,
+          "testprops" : false,
+          "testallprops" : false,
+          "hasevents" : false,
+          "prefixes" : false,
+          "domprefixes" : false
+      },
+      "uglify" : true,
+      // Crawl project for references to Modernizr tests - it will crawl all *.js, *.css, *.scss files, except files that are in node_modules/
+      "parseFiles" : true,
+      // "matchCommunityTests" : false
+    },
+
     // Grunt Watch
     watch: {
       options: {
@@ -39,6 +68,10 @@ module.exports = function(grunt) {
       },
       html: {
         files: ['*.html']
+      },
+      modernizr: {
+        files: ['stylesheets/sass/*.scss', 'javascripts/vendor/*.js'],
+        tasks: ['modernizr']
       }
     },
 
@@ -50,7 +83,7 @@ module.exports = function(grunt) {
           port: 9000
         }        
       }
-    }
+    },
 
   });
 
@@ -59,10 +92,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks("grunt-modernizr");
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // TASKS ===================================== /
 
-  grunt.registerTask('default', ['connect', 'compass', 'coffee', 'watch']);
+  grunt.registerTask('default', ['connect', 'compass', 'coffee', 'modernizr', 'watch']);
 
 }
