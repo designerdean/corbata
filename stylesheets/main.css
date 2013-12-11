@@ -125,7 +125,6 @@ body {
   src: url('/stylesheets/fonts/Icomoon.eot?#iefix') format('eot'), url('/stylesheets/fonts/Icomoon.ttf') format('truetype'), url('/stylesheets/fonts/Icomoon.woff') format('woff'), url('/stylesheets/fonts/Icomoon.svg') format('svg');
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
 /* line 50, sass/_typography.scss */
 [data-icon]:before {
   content: attr(data-icon);
