@@ -12,3 +12,23 @@ html {
 body {
   overflow-x: hidden;
 }
+
+// Main
+
+$main-width: 75em; // Change your main area width here
+
+.main {
+  margin: 0 auto;
+  max-width: $main-width;
+}
+
+// IE8 Min-Width
+
+.old-ie {
+  body {
+    overflow-x: auto;
+  }
+  .main {
+    min-width: $main-width;
+  }
+}

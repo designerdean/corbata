@@ -96,6 +96,21 @@ body {
   overflow-x: hidden;
 }
 
+/* line 20, sass/_grid.scss */
+.main {
+  margin: 0 auto;
+  max-width: 75em;
+}
+
+/* line 28, sass/_grid.scss */
+.old-ie body {
+  overflow-x: auto;
+}
+/* line 31, sass/_grid.scss */
+.old-ie .main {
+  min-width: 75em;
+}
+
 @font-face {
   font-family: "Font Name";
   src: url('/stylesheets/fonts/FontName.eot');
