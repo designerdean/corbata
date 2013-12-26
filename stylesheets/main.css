@@ -129,6 +129,7 @@ html {
 
 /* line 30, sass/_typography.scss */
 body {
+  color: #333333;
   font-size: 1.2em;
   line-height: 1.6em;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -140,7 +141,7 @@ body {
   src: url('/stylesheets/fonts/Icomoon.eot?#iefix') format('eot'), url('/stylesheets/fonts/Icomoon.ttf') format('truetype'), url('/stylesheets/fonts/Icomoon.woff') format('woff'), url('/stylesheets/fonts/Icomoon.svg') format('svg');
 }
 
-/* line 50, sass/_typography.scss */
+/* line 51, sass/_typography.scss */
 [data-icon]:before {
   content: attr(data-icon);
   font-family: 'Icomoon';
@@ -150,6 +151,8 @@ body {
   speak: none;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* line 1, sass/_images.scss */

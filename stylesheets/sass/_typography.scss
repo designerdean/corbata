@@ -29,6 +29,7 @@ html {
 
 body {
   @extend %font-base;
+  color: #333333;
   font-size: 1.2em; // Set global font-size here
   line-height: 1.6em; // Set global line-height here
   -webkit-font-smoothing: subpixel-antialiased; // Fixes the inconsistent font-weight in Safari
@@ -55,7 +56,9 @@ body {
   line-height: 1;
   speak: none;
   text-transform: none;
+  // Better Font Rendering
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Headings
