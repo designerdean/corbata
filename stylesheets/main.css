@@ -91,6 +91,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
 }
 
+/* line 8, sass/_grid.scss */
+html {
+  overflow-x: hidden;
+}
+
 /* line 12, sass/_grid.scss */
 body {
   overflow-x: hidden;
