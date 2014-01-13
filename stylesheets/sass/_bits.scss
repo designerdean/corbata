@@ -40,15 +40,9 @@
   @media 
     only screen and (-webkit-min-device-pixel-ratio: 2), 
     only screen and (min-resolution: 192dpi) { 
-      background-image: url($image);
+      background-image: url($image); // Change "url" to "image-url" if using Rails or Middleman
       background-size: $width $height;
     }
-}
-
-// Disable user-select click highlight
-@mixin user-select($none) {
-  $none: unquote($none);
-  @include experimental(user-select, $none, -moz, -webkit, not -o, not -ms, -khtml, official);
 }
 
 // Sass Extends
@@ -80,12 +74,16 @@
   @include translate3d(0, 0, 0, 0);
 }
 
-.screen-reader {
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
   position: absolute;
-    top: -9999px;
-    left: -9999px;
+  width: 1px;
 }
 
 // Sass Variables
 // ==========================================================================
-
