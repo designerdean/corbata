@@ -65,12 +65,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 66, sass/_bits.scss */
 .map * {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
-/* line 77, sass/_bits.scss */
+/* line 76, sass/_bits.scss */
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -86,8 +84,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 *,
 *:after,
 *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -185,12 +181,8 @@ input[type="tel"],
 input[type="text"],
 input[type="url"],
 textarea {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
   border: 0;
+  border-radius: 0;
   margin: 0;
   padding: 0.4em;
   word-break: normal;
@@ -206,12 +198,8 @@ textarea {
 input[type="button"],
 input[type="submit"],
 input[type="cancel"] {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
   border: 0;
+  border-radius: 0;
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
