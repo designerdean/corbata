@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
       },
       stylesheets: {
         files: ['stylesheets/sass/*.scss'],
-        tasks: ['compass']
+        tasks: ['compass', 'autoprefixer']
       },
       javascripts: {
         files: ['javascripts/coffee/*.coffee'],
@@ -72,7 +72,21 @@ module.exports = function(grunt) {
       modernizr: {
         files: ['stylesheets/sass/*.scss', 'javascripts/vendor/*.js'],
         tasks: ['modernizr']
-      }
+      },
+    },
+
+    // Autoprefixer
+    autoprefixer: {
+      options: {
+        // Task-specific options go here.
+      },
+      // prefix all files
+      multiple_files: {
+        expand: true,
+        flatten: true,
+        src: 'stylesheets/*.css',
+        dest: 'stylesheets/'
+      },
     },
 
     // Start Local Server
@@ -94,9 +108,17 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks("grunt-modernizr");
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-autoprefixer');
+
 
   // TASKS ===================================== /
 
-  grunt.registerTask('default', ['connect', 'compass', 'coffee', 'modernizr', 'watch']);
+  grunt.registerTask('default', [
+    'connect',
+    'compass',
+    'coffee',
+    'modernizr',
+    'autoprefixer',
+    'watch']);
 
 };
