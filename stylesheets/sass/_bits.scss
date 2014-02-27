@@ -35,13 +35,15 @@
   }
 }
 
-// Media Queries - Retina - http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss & http://www.brettjankord.com/2012/11/28/cross-browser-retinahigh-resolution-media-queries/
-@mixin image-2x($image, $width, $height) {
+// Retina Background Image Replacement - http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss
+@mixin image-2x($image-1x, $image-2x) {
+  background-image: image-url($image-1x);
+  background-repeat: repeat;
   @media 
     only screen and (-webkit-min-device-pixel-ratio: 2), 
     only screen and (min-resolution: 192dpi) { 
-      background-image: url($image); // Change "url" to "image-url" if using Rails or Middleman
-      background-size: $width $height;
+      background-image: image-url($image-2x);
+      background-size: image-width('#{$image-1x}') image-height('#{$image-1x}');
     }
 }
 
