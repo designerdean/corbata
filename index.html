@@ -32,23 +32,19 @@
 
       <p>Outside of the common (and some custom) CSS resets, Corbata does not have any default styling. It's just meant to act as a starting place for responsive and organized HTML as well as DRY, readable, and modular CSS (through Sass and Compass). It also allows for CoffeeScript. Corbata is similar to, and inspired by, <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>.</p>
 
-      <p>Corbata uses a Gemfile to manage Sass, Compass, and CoffeeScript. So, you will need to install a few things:</p>
+      <p>Corbata uses <a href="http://gruntjs.com">Grunt</a>, a JavaScript task runner, to make automation easier. I've only set it up for compiling Sass/Compass and CoffeeScript, but <a href="http://gruntjs.com/plugins">it can do a whole lot more than that</a>. So, you will need to install a few things:</p>
 
       <ul>
-        <li><a href="https://www.ruby-lang.org/en/downloads" target="_blank">Ruby</a></li>
-        <li><a href="http://bundler.io" target="_blank">Bundler</a></li>
-        <li><a href="http://thesassway.com/beginner/getting-started-with-sass-and-compass" target="_blank">Sass &amp; Compass</a></li>
-        <li><a href="http://coffeescript.org" target="_blank">CoffeeScript</a></li>
+        <li><a href="http://nodejs.org">Node & NPM</a></li>
+        <li><a href="http://gruntjs.com/getting-started">Grunt</a></li>
       </ul>
 
-      <p>During development, you will need to have terminal watch for changes to your Sass and CoffeeScript files so that they can be compiled to CSS and JavaScript.</p>
-
-      <p>If you prefer Grunt over Ruby, <a href="https://github.com/designerdean/corbata/tree/grunt" target="_blank">check out the the Grunt version of Corbata</a>.</p>
+      <p>After everything is installed, open the terminal and cd into the directory where you have placed Corbata. Then, simply run "grunt". This will watch and automatically compile all the Sass and CoffeeScript files into CSS and JavaScript. In the Gruntfile, I'm using port 9000 to serve up the app; so, in order for livereload to work, you'll need to navigate to localhost:9000.</p>
 
       <footer>
         <a href="https://github.com/designerdean/corbata">View on GitHub</a>
-        <a href="https://twitter.com/designer_dean" target="_blank">Follow me on Twitter</a>
-        <a href="http://www.designerdean.com" target="_blank">Visit my website</a>        
+        <a href="https://twitter.com/designer_dean">Follow me on Twitter</a>
+        <a href="http://www.designerdean.com">Visit my website</a>        
       </footer>
 		</div>
 
