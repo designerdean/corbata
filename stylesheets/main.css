@@ -178,7 +178,7 @@ fieldset {
 }
 
 /* line 24, sass/_forms.scss */
-input[type="email"]
+input[type="email"],
 input[type="password"],
 input[type="search"],
 input[type="tel"],
