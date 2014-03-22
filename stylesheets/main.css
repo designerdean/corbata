@@ -246,6 +246,19 @@ hr {
   text-decoration: underline;
 }
 
+/* line 49, sass/_modules.scss */
+.skip:focus {
+  background-color: #000000;
+  clip: auto;
+  color: #ffffff;
+  height: auto;
+  padding: 0.5em 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+}
+
 @media print {
   /* line 5, sass/_print.scss */
   * {
