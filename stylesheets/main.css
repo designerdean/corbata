@@ -137,7 +137,6 @@ body {
   color: #333333;
   font-size: 1.2em;
   line-height: 1.4;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 @font-face {
@@ -146,7 +145,7 @@ body {
   src: url('/stylesheets/fonts/Icomoon.eot?#iefix') format('eot'), url('/stylesheets/fonts/Icomoon.ttf') format('truetype'), url('/stylesheets/fonts/Icomoon.woff') format('woff'), url('/stylesheets/fonts/Icomoon.svg') format('svg');
 }
 
-/* line 51, sass/_typography.scss */
+/* line 50, sass/_typography.scss */
 [data-icon]:before {
   content: attr(data-icon);
   font-family: 'Icomoon';
