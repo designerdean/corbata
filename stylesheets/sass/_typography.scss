@@ -1,12 +1,9 @@
 // @font-face & Font Stacks
 // ==========================================================================
 
-@import url(http://fonts.googleapis.com/css?family=Titan+One);
-
 %font-base {font-family: Helvetica, Arial, sans-serif;}
 %font-base-bold {@extend %font-base; font-weight: bold;}
 %font-alt {font-family: 'Titan One', Arial, sans-serif; font-weight: normal;}
-// %font-alt-bold {@extend %font-alt; font-weight: bold;}
 
 // Global Font
 // ==========================================================================
