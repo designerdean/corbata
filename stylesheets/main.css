@@ -137,7 +137,10 @@ body {
   color: #333333;
   font-size: 1.2em;
   line-height: 1.4;
+<<<<<<< HEAD
   -webkit-font-smoothing: subpixel-antialiased;
+=======
+>>>>>>> master
 }
 
 @font-face {
@@ -146,7 +149,11 @@ body {
   src: url('/stylesheets/fonts/Icomoon.eot?#iefix') format('eot'), url('/stylesheets/fonts/Icomoon.ttf') format('truetype'), url('/stylesheets/fonts/Icomoon.woff') format('woff'), url('/stylesheets/fonts/Icomoon.svg') format('svg');
 }
 
+<<<<<<< HEAD
 /* line 51, sass/_typography.scss */
+=======
+/* line 50, sass/_typography.scss */
+>>>>>>> master
 [data-icon]:before {
   content: attr(data-icon);
   font-family: 'Icomoon';
@@ -178,7 +185,11 @@ fieldset {
 }
 
 /* line 24, sass/_forms.scss */
+<<<<<<< HEAD
 input[type="email"]
+=======
+input[type="email"],
+>>>>>>> master
 input[type="password"],
 input[type="search"],
 input[type="tel"],
@@ -244,6 +255,19 @@ hr {
 .ancient a:visited {
   color: #ffffff;
   text-decoration: underline;
+}
+
+/* line 49, sass/_modules.scss */
+.skip:focus {
+  background-color: #000000;
+  clip: auto;
+  color: #ffffff;
+  height: auto;
+  padding: 0.5em 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
 }
 
 @media print {

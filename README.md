@@ -7,7 +7,11 @@ Corbata is a base layer of rules and conventions that act as a starting point fo
 
 Outside of the common (and some custom) CSS resets, Corbata does not have any default styling. It's just meant to act as a starting place for responsive and organized HTML as well as DRY, readable, and modular CSS (through Sass and Compass). It also allows for CoffeeScript. Corbata is similar to, and inspired by, [HTML5 Boilerplate](http://html5boilerplate.com).
 
+<<<<<<< HEAD
 This version of Corbata uses [Grunt](http://gruntjs.com), a JavaScript task runner, to make automation easier. I've only set it up for compiling Sass/Compass and CoffeeScript, but [it can do a whole lot more than that](http://gruntjs.com/plugins). So, you will need to install a few things:
+=======
+Corbata uses [Grunt](http://gruntjs.com), a JavaScript task runner, to make automation easier. I've only set it up for compiling Sass/Compass and CoffeeScript, but [it can do a whole lot more than that](http://gruntjs.com/plugins). So, you will need to install a few things:
+>>>>>>> master
 
 - [Node & NPM](http://nodejs.org)
 - [Grunt](http://gruntjs.com/getting-started)
