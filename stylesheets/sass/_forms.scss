@@ -15,15 +15,15 @@ label {
 
 }
 
-input[type="email"],
-input[type="password"],
+input[type="email"]
+input[type="password"],,
 input[type="search"],
 input[type="tel"],
 input[type="text"],
 input[type="url"],
 textarea {
+  @include border-radius(0);
   border: 0;
-  border-radius: 0;
   margin: 0;
   padding: 0.4em;
   word-break: normal;
@@ -37,15 +37,15 @@ textarea {
 // Buttons
 // ==========================================================================
 
-.button-row {
+.btn-row {
 
 }
 
 input[type="button"],
 input[type="submit"],
 input[type="cancel"] {
+  @include border-radius(0);
   border: 0;
-  border-radius: 0;
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
