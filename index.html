@@ -30,16 +30,16 @@
         a bumper compendium of cascading and connected CSS files, naming conventions, modules, plugins and library scripts that ensure any project led or worked on by any member(s) of a team will stay on convention, and be simpler for anyone else to step into and work with at any time.
       </blockquote>
 
-      <p>Outside of the common (and some custom) CSS resets, Corbata does not have any default styling. It's just meant to act as a starting place for responsive and organized HTML as well as DRY, readable, and modular CSS (through Sass and Compass). It also allows for CoffeeScript. Corbata is similar to, and inspired by, <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>.</p>
+      <p>Outside of the common (and some custom) CSS resets, Corbata does not have any default styling. It's just meant to act as a starting place for responsive and organized HTML as well as DRY, readable, and modular CSS (through Sass). It also allows for CoffeeScript. Corbata is similar to, and inspired by, <a href="http://html5boilerplate.com">HTML5 Boilerplate</a>.</p>
 
-      <p>Corbata uses <a href="http://gruntjs.com">Grunt</a>, a JavaScript task runner, to make automation easier. I've only set it up for compiling Sass/Compass and CoffeeScript, but <a href="http://gruntjs.com/plugins">it can do a whole lot more than that</a>. So, you will need to install a few things:</p>
+      <p>Corbata uses <a href="http://gulpjs.com">Gulp</a> to make automation easier. I've only set it up for compiling Sass/Compass and CoffeeScript, but <a href="http://gulpjs.com/plugins">it can do a whole lot more than that</a>. So, you will need to install a few things:</p>
 
       <ul>
         <li><a href="http://nodejs.org">Node & NPM</a></li>
-        <li><a href="http://gruntjs.com/getting-started">Grunt</a></li>
+        <li><a href="https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md#getting-started">Gulp</a></li>
       </ul>
 
-      <p>After everything is installed, open the terminal and cd into the directory where you have placed Corbata. Then, simply run "grunt". This will watch and automatically compile all the Sass and CoffeeScript files into CSS and JavaScript. In the Gruntfile, I'm using port 9000 to serve up the app; so, in order for livereload to work, you'll need to navigate to localhost:9000.</p>
+      <p>After everything is installed, open the terminal and cd into the directory where you have placed Corbata. Run "npm install". Then, simply run "gulp". This will watch and automatically compile all the Sass and CoffeeScript files into CSS and JavaScript. Then, navigate to localhost:8080.</p>
 
       <footer>
         <a href="https://github.com/designerdean/corbata">View on GitHub</a>
