@@ -3,17 +3,13 @@
 
 // Insert @import from Google, Typekit, Fonts.com, etc.
 
-// Font Name
-
-@include font-face("Font Name",
-  font-files(
-    "FontName.ttf",
-    "FontName.woff",
-    "FontName.svg"),
-    "FontName.eot"
-);
-
-// Font Stacks
+// @include font-face("Font Name",
+//   font-files(
+//     "FontName.ttf",
+//     "FontName.woff",
+//     "FontName.svg"),
+//     "FontName.eot"
+// );
 
 %font-base {font-family: Helvetica, Arial, sans-serif;}
 %font-base-bold {@extend %font-base; font-weight: bold;}
@@ -32,19 +28,20 @@ body {
   color: #333333;
   font-size: 1.2em; // Set global font-size here
   line-height: 1.4; // Set global line-height here
+  -webkit-font-smoothing: subpixel-antialiased; // Fixes the inconsistent font-weight in Safari
 }
 
 // Icon Font
 // ==========================================================================
 
-@include font-face("Icomoon",
-  font-files(
-    "Icomoon.ttf",
-    "Icomoon.woff",
-    "Icomoon.svg"
-  ),
-  "Icomoon.eot"
-);
+// @include font-face("Icomoon",
+//   font-files(
+//     "Icomoon.ttf",
+//     "Icomoon.woff",
+//     "Icomoon.svg"
+//   ),
+//   "Icomoon.eot"
+// );
 
 // Use the following CSS code if you want to use data attributes for inserting your icons
 [data-icon]:before {

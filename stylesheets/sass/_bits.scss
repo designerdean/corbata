@@ -1,41 +1,27 @@
 // Sass Mixins
 // ==========================================================================
 
+$baby-bear:   30em;
+$goldilocks:  50em;
+$mama-bear:   75em;
+$papa-bear:   85em;
+
 // At-Least & Until: http://codepen.io/imathis/pen/BDzcI
 
-// Media Queries - Mobile-First
-@mixin at-least($point) {
-  @if $point == goldilocks {
-    @media (min-width: 30em) { @content; }
-  }
-  @if $point == mama-bear {
-    @media (min-width: 50em) { @content; }
-  }
-  @if $point == papa-bear {
-    @media (min-width: 75em) { @content; }
-  }
-  @else {
-    @media (min-width: $point) { @content; }  // Custom
+@mixin under($device-width) {
+  @media screen and (max-width: $device-width) {
+    @content 
   }
 }
 
-// Media Queries - Desktop-First
-@mixin until($point) {
-  @if $point == mama-bear {
-    @media (max-width: 75em) { @content; }
-  }
-  @if $point == goldilocks {
-    @media (max-width: 50em) { @content; }
-  }
-  @if $point == baby-bear {
-    @media (max-width: 30em) { @content; }
-  }
-  @else {
-    @media (max-width: $point) { @content; }  // Custom
+@mixin over($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content 
   }
 }
 
 // Retina Background Image Replacement - http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss
+
 @mixin image-2x($image-1x, $image-2x) {
   background-image: image-url($image-1x);
   background-repeat: repeat;
@@ -51,6 +37,7 @@
 // ==========================================================================
 
 // Clearfix: http://web-design-weekly.com/2013/05/12/handy-sass-mixins
+
 %clear-after {
   & {
     *zoom: 1;
@@ -70,6 +57,7 @@
 }
 
 // Fix Weirdness During CSS Transitions
+
 %fix-transition-bugs {
   backface-visibility: hidden; // Fixes flickering of objects during CSS transitions
   transform: rotate3d(0,0,0,0); // Fixes font-weight shifting during CSS transitions
@@ -88,3 +76,53 @@
 
 // Sass Variables
 // ==========================================================================
+
+// $color-base: Add color;
+// $color-accent: Add color;
+
+// Help with understanding media query mixins (remove after development has begun)
+// ==========================================================================
+
+body {
+
+  // Under (Desktop First)
+
+  // background-color: silver;
+  // &:before { content: "Desktop-first default"; }
+
+  // @include under($mama-bear) {
+  //   background: hotpink;
+  //   &:before { content: "screen is <= #{$mama-bear}"; }
+  // }
+
+  // @include under($goldilocks) {
+  //   background: gold;
+  //   &:before { content: "screen is <= #{$goldilocks}"; }
+  // }
+
+  // @include under($baby-bear) {
+  //   background: deepskyblue;
+  //   &:before { content: "screen is <= #{$baby-bear}"; }
+  // }
+
+  // Over (Mobile First)
+
+  // background-color: deepskyblue;
+  // &:before { content: "Mobile-first default"; }
+
+  // @include over($baby-bear) {
+  //   background: gold;
+  //   &:before { content: "screen is >= #{$baby-bear} (goldilocks)"; }
+  // }
+
+  // @include over($goldilocks) {
+  //   background: hotpink;
+  //   &:before { content: "screen is >= #{$goldilocks} (mama-bear)"; }
+  // }
+
+  // @include over($mama-bear) {
+  //   background: silver;
+  //   &:before { content: "screen is >= #{$mama-bear} (papa-bear)"; }
+  // }
+
+}
