@@ -1,0 +1,45 @@
+.footer {
+  background-color: #2d2f45;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 1em 2em;
+  position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  text-align: right;
+  @include under($goldilocks) {
+    font-size: 1em;
+    margin-top: 3em;
+    position: static;
+  }
+}
+
+.footer a,
+.footer a:visited {
+  color: #f8e461;
+  text-decoration: none;
+  @include under($goldilocks) {
+    display: block;
+    line-height: 2;
+    text-align: center;
+  }
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a:first-child {
+  float: left;
+  @include under($goldilocks) {
+    float: none;
+  }
+}
+
+.footer a:first-child + a {
+  margin-right: 1em;
+  @include under($goldilocks) {
+    margin-right: 0;
+  }
+}

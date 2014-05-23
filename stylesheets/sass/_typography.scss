@@ -1,0 +1,121 @@
+// @font-face & Font Stacks
+// ==========================================================================
+
+@import url(http://fonts.googleapis.com/css?family=Titan+One);
+
+%font-base {font-family: Helvetica, Arial, sans-serif;}
+%font-base-bold {@extend %font-base; font-weight: bold;}
+%font-alt {font-family: 'Titan One', Arial, sans-serif; font-weight: normal;}
+// %font-alt-bold {@extend %font-alt; font-weight: bold;}
+
+// Global Font
+// ==========================================================================
+
+html {
+  font-size: 100%; // Change this if you want your root font-size bigger/smaller
+}
+
+body {
+  @extend %font-base;
+  background-color: #ddf1fb;
+  color: #2d2f45;
+  font-size: 1.4em; // Set global font-size here
+  line-height: 1.4; // Set global line-height here
+  @include under($mama-bear) {
+    font-size: 1.2em;
+  }
+  @include under($goldilocks) {
+    font-size: 1em;
+  }
+}
+
+// Headings
+// ==========================================================================
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1 {
+  @extend %font-alt;
+  border-bottom: 20px double #ee554b;
+  color: #ec2535;
+  font-size: 6em;
+  line-height: 1.3em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+  padding: 0 0 0 0;
+  text-align: center;
+  text-transform: capitalize;
+  @include under($mama-bear) {
+    font-size: 4em;
+  }
+  @include under($goldilocks) {
+    font-size: 3.2em;
+  }
+}
+
+h2 {
+  background-color: #ee554b;
+  border-radius: 18px;
+  color: #ddf1fb;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em 1.2em;
+}
+
+h2 a,
+h2 a:visited {
+  color: #ddf1fb;
+}
+
+// Misc
+// ==========================================================================
+
+p {
+  margin-bottom: 1em;
+}
+
+ul, ol {
+
+}
+
+  ul {
+    list-style-type: circle;
+    margin: 0 3em 1em 3em;
+  }
+
+blockquote {
+  background-color: #ec2535;
+  border-left: 7px solid #f8e461;
+  color: #ddf1fb;
+  font-style: italic;
+  margin: 2em auto 2em auto;
+  padding: 1.5em 2em;
+  width: 80%;
+  @include under($goldilocks) {
+    width: 100%;
+  }
+}
+
+p.btn {
+  margin: 3em auto;
+  text-align: center;
+}
+
+p.btn a, p.btn a:visited {
+  background-color: #f8e461;
+  border-radius: 18px;
+  color: #ec2535;
+  cursor: pointer;
+  display: inline;
+  font-family: "Titan One", cursive;
+  font-size: 3em;
+  line-height: 1.3em;
+  padding: 0.3em 0.5em;
+  text-align: center;
+  text-decoration: none;
+  // @include respond-to(small-screens) {font-size: 3em;}
+}
