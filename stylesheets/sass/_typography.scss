@@ -1,4 +1,4 @@
-// @font-face & Font Stacks
+// Custom Fonts & Icons
 // ==========================================================================
 
 // Insert @import from Google, Typekit, Fonts.com, etc.
@@ -16,23 +16,7 @@
 %font-alt {font-family: Helvetica, Arial, sans-serif;}
 %font-alt-bold {@extend %font-alt; font-weight: bold;}
 
-// Global Font
-// ==========================================================================
-
-html {
-  font-size: 100%; // Change this if you want your root font-size bigger/smaller
-}
-
-body {
-  @extend %font-base;
-  color: #333333;
-  font-size: 1.2em; // Set global font-size here
-  line-height: 1.4; // Set global line-height here
-  -webkit-font-smoothing: subpixel-antialiased; // Fixes the inconsistent font-weight in Safari
-}
-
-// Icon Font
-// ==========================================================================
+// Icons
 
 // @include font-face("Icomoon",
 //   font-files(
@@ -43,7 +27,6 @@ body {
 //   "Icomoon.eot"
 // );
 
-// Use the following CSS code if you want to use data attributes for inserting your icons
 [data-icon]:before {
   content: attr(data-icon);
   font-family: 'Icomoon';
@@ -56,6 +39,20 @@ body {
   // Better Font Rendering
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+// Global Font
+// ==========================================================================
+
+html {
+  font-size: 100%; // Change this if you want your root font-size bigger/smaller
+}
+
+body {
+  @extend %font-base;
+  color: #333333;
+  font-size: 1.2em; // Set global font-size here
+  line-height: 1.4; // Set global line-height here
 }
 
 // Headings
