@@ -6,13 +6,15 @@ $goldilocks:  50em;
 $mama-bear:   75em;
 $papa-bear:   85em;
 
-// At-Least & Until: http://codepen.io/imathis/pen/BDzcI
+// Under
 
 @mixin under($device-width) {
   @media screen and (max-width: $device-width) {
     @content 
   }
 }
+
+// Over
 
 @mixin over($device-width) {
   @media screen and (min-width: $device-width) {
@@ -77,8 +79,8 @@ $papa-bear:   85em;
 // Sass Variables
 // ==========================================================================
 
-// $color-base: Add color;
-// $color-accent: Add color;
+$color-base: #000000;
+$color-accent: #e92b33;
 
 // Help with understanding media query mixins (remove after development has begun)
 // ==========================================================================
