@@ -1,12 +1,12 @@
 // Sass Mixins
 // ==========================================================================
 
-$baby-bear:   30em;
+$babybear:   30em;
 $goldilocks:  50em;
-$mama-bear:   75em;
-$papa-bear:   85em;
+$mamabear:   75em;
+$papabear:   85em;
 
-// Under
+// Under (Desktop First)
 
 @mixin under($device-width) {
   @media screen and (max-width: $device-width) {
@@ -14,7 +14,7 @@ $papa-bear:   85em;
   }
 }
 
-// Over
+// Over (Mobile First)
 
 @mixin over($device-width) {
   @media screen and (min-width: $device-width) {
@@ -81,50 +81,3 @@ $papa-bear:   85em;
 
 $color-base: #000000;
 $color-accent: #e92b33;
-
-// Help with understanding media query mixins (remove after development has begun)
-// ==========================================================================
-
-body {
-
-  // Under (Desktop First)
-
-  // background-color: silver;
-  // &:before { content: "Desktop-first default"; }
-
-  // @include under($mama-bear) {
-  //   background: hotpink;
-  //   &:before { content: "screen is <= #{$mama-bear}"; }
-  // }
-
-  // @include under($goldilocks) {
-  //   background: gold;
-  //   &:before { content: "screen is <= #{$goldilocks}"; }
-  // }
-
-  // @include under($baby-bear) {
-  //   background: deepskyblue;
-  //   &:before { content: "screen is <= #{$baby-bear}"; }
-  // }
-
-  // Over (Mobile First)
-
-  // background-color: deepskyblue;
-  // &:before { content: "Mobile-first default"; }
-
-  // @include over($baby-bear) {
-  //   background: gold;
-  //   &:before { content: "screen is >= #{$baby-bear} (goldilocks)"; }
-  // }
-
-  // @include over($goldilocks) {
-  //   background: hotpink;
-  //   &:before { content: "screen is >= #{$goldilocks} (mama-bear)"; }
-  // }
-
-  // @include over($mama-bear) {
-  //   background: silver;
-  //   &:before { content: "screen is >= #{$mama-bear} (papa-bear)"; }
-  // }
-
-}
