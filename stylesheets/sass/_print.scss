@@ -1,11 +1,10 @@
 // HTML5 Boilerplate's print styles
 
 @media print {
-
   * {
     background: transparent !important;
     color: #000 !important; /* Black prints faster: h5bp.com/s */
-    box-shadow:none !important;
+    box-shadow: none !important;
     text-shadow: none !important;
   }
 
@@ -22,11 +21,13 @@
     content: " (" attr(title) ")";
   }
 
-  // Don't show links for images, or javascript/internal links
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
 
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
     content: "";
   }
 
@@ -49,10 +50,6 @@
     max-width: 100% !important;
   }
 
-  @page {
-    margin: 0.5cm;
-  }
-
   p,
   h2,
   h3 {
@@ -64,5 +61,4 @@
   h3 {
     page-break-after: avoid;
   }
-
 }
