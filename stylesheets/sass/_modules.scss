@@ -5,7 +5,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
 }
@@ -24,9 +24,9 @@ hr {
 // ==========================================================================
 
 .ancient {
-  background: #666666;
-  border-bottom: 1px solid #ffffff;
-  color: #ffffff;
+  background: #666;
+  border-bottom: 1px solid #fff;
+  color: #fff;
   margin: 0;
   padding: 0.5em 1em;
   position: fixed;
@@ -39,7 +39,7 @@ hr {
 
 .ancient a,
 .ancient a:visited {
-  color: #ffffff;
+  color: #fff;
   text-decoration: underline;
 }
 
@@ -47,9 +47,9 @@ hr {
 // ==========================================================================
 
 .skip:focus {
-  background-color: #000000;
+  background-color: #000;
   clip: auto;
-  color: #ffffff;
+  color: #fff;
   height: auto;
   padding: 0.5em 1em;
   position: fixed;
