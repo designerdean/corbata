@@ -6,10 +6,12 @@ $goldilocks: 50em;
 $mamabear:   75em;
 $papabear:   85em;
 
+$bp-offset: 0.01em;
+
 // Under (Desktop First)
 
 @mixin under($device-width) {
-  @media screen and (max-width: $device-width) {
+  @media screen and (max-width: $device-width - $bp-offset) {
     @content 
   }
 }
@@ -25,7 +27,7 @@ $papabear:   85em;
 // Between (Larger value goes first)
 
 @mixin between($point-max, $point-min) {
-  @media (max-width: $point-max) and (min-width: $point-min) {
+  @media (max-width: $point-max - $bp-offset) and (min-width: $point-min) {
     @content 
   }
 }
