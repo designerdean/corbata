@@ -11,6 +11,10 @@ fieldset {
   padding: 0;
 }
 
+legend {
+  padding: 0;
+}
+
 label {
 
 }
@@ -23,12 +27,10 @@ input[type="tel"],
 input[type="text"],
 input[type="url"],
 textarea {
-  border: 0;
   border-radius: 0;
   margin: 0;
   padding: 0.4em;
   word-break: normal;
-  -webkit-appearance: none;
 }
 
 textarea {
@@ -45,8 +47,6 @@ textarea {
 input[type="button"],
 input[type="submit"],
 input[type="cancel"] {
-  border: 0;
-  border-radius: 0;
   cursor: pointer;
   display: inline-block;
   white-space: nowrap;
