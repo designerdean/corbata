@@ -20,27 +20,14 @@ hr {
   & img {max-width: none;}
 }
 
-// Ancient Browser Alert
+// Browser Upgrade Prompt
 // ==========================================================================
 
-.ancient {
-  background: #666;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  margin: 0;
-  padding: 0.5em 1em;
-  position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-  text-align: center;
-  z-index: 1000000;
-}
-
-.ancient a,
-.ancient a:visited {
-  color: #fff;
-  text-decoration: underline;
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 // Skip to Content
