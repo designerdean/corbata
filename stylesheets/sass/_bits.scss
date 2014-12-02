@@ -9,7 +9,6 @@ $papabear:   85em;
 $bp-offset: 0.01em;
 
 // Under (Desktop First)
-
 @mixin under($device-width) {
   @media screen and (max-width: $device-width - $bp-offset) {
     @content 
@@ -17,7 +16,6 @@ $bp-offset: 0.01em;
 }
 
 // Over (Mobile First)
-
 @mixin over($device-width) {
   @media screen and (min-width: $device-width) {
     @content 
@@ -25,15 +23,13 @@ $bp-offset: 0.01em;
 }
 
 // Between (Larger value goes first)
-
 @mixin between($point-max, $point-min) {
   @media (max-width: $point-max - $bp-offset) and (min-width: $point-min) {
     @content 
   }
 }
 
-// Retina Background Image Replacement - http://37signals.com/svn/posts/3271-easy-retina-ready-images-using-scss
-
+// Retina Background Image Replacement: http://bit.ly/1w0JO4e
 @mixin image-2x($image-1x, $image-2x) {
   background-image: image-url($image-1x);
   background-repeat: repeat;
@@ -45,36 +41,36 @@ $bp-offset: 0.01em;
     }
 }
 
-// Sass Extends
-// ==========================================================================
-
-// Clearfix: http://web-design-weekly.com/2013/05/12/handy-sass-mixins
-
-%clear-after {
-  & {
-    *zoom: 1;
-  }
-  &:before,
+// Clearfix: http://bit.ly/1ybOcc3 & http://bit.ly/1pnL4bf
+@mixin clearfix() {
   &:after {
+    clear: both;
     content: "";
     display: table;
   }
-  &:after {
-    clear: both;
-  }
 }
 
-%default-box-model {
-  box-sizing: content-box;
-}
-
-// Fix Weirdness During CSS Transitions
-
-%fix-transition-bugs {
+// Fix weirdness during CSS transitions
+@mixin fix-transition-bugs() {
   backface-visibility: hidden; // Fixes flickering of objects during CSS transitions
   transform: rotate3d(0,0,0,0); // Fixes font-weight shifting during CSS transitions
 }
 
+// Sass Extends
+// ==========================================================================
+
+// Only use @extend to share traits among explicitly related rulesets: http://bit.ly/1viYJEW
+
+// Sass Variables
+// ==========================================================================
+
+$color-base: #000;
+$color-accent: #e92b33;
+
+// Misc
+// ==========================================================================
+
+// Hide for screen but not screen readers
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -85,9 +81,3 @@ $bp-offset: 0.01em;
   position: absolute;
   width: 1px;
 }
-
-// Sass Variables
-// ==========================================================================
-
-$color-base: #000;
-$color-accent: #e92b33;

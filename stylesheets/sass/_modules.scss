@@ -14,10 +14,11 @@ hr {
 // ==========================================================================
 
 // Don't reset the *:before & *:after
-
 .map * {
-  @extend %default-box-model;
-  & img {max-width: none;}
+  box-sizing: content-box;
+  & img {
+    max-width: none;
+  }
 }
 
 // Browser Upgrade Prompt
