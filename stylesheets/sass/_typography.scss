@@ -32,23 +32,23 @@
 
 // Font Extends
 
-%font-base {
+@mixin font-base {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-%font-base-bold {
-  @extend %font-base;
+@mixin font-base-bold {
+  @include font-base;
   font-weight: bold;
 }
 
-%font-alt {
+@mixin font-alt {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-%font-alt-bold {
-  @extend %font-alt;
+@mixin font-alt-bold {
+  @include font-alt;
   font-weight: bold;
 }
 
@@ -60,7 +60,7 @@ html {
 }
 
 body {
-  @extend %font-base;
+  @include font-base;
   color: #333;
   font-size: 1.2em; // Set global font-size here
   line-height: 1.4; // Set global line-height here
