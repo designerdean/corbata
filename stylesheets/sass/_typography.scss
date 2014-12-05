@@ -30,7 +30,7 @@
 // Use Font Face Mixin (one for each font)
 @include font-face('Font Name', FontName);
 
-// Font Extends
+// Font Mixins
 
 @mixin font-base {
   font-family: Helvetica, Arial, sans-serif;
