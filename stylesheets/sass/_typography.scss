@@ -61,7 +61,7 @@ html {
 
 body {
   @include font-base;
-  color: #333;
+  color: $color-base;
   font-size: 1.2em; // Set global font-size here
   line-height: 1.4; // Set global line-height here
 }
