@@ -1,9 +1,7 @@
-// Vendor (Local)
-
+// Vendor
 @import "vendor/normalize.css";
 
-// Sass Imports (Local)
-
+// Sass Imports
 @import "bits";
 @import "grid";
 @import "typography";
@@ -19,5 +17,4 @@
 @import "modules";
 
 // Print (always last)
-
 @import "print";
