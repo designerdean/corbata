@@ -1,62 +1,69 @@
-var gulp =      require('gulp'),
-    gutil =     require('gulp-util'),
-    coffee =    require('gulp-coffee'),
-    concat =    require('gulp-concat'),
-    uglify =    require('gulp-uglify'),
-    sass =      require('gulp-ruby-sass'),
-    prefix =    require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
-    connect =   require('gulp-connect');
+// Include gulp
+var gulp = require('gulp'); 
 
-// Misc Variables
+// Include Our Plugins
+var jshint = require('gulp-jshint');
+var autoprefixer = require('gulp-autoprefixer');
+var sass = require('gulp-sass');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var plumber = require('gulp-plumber');
+var rename = require('gulp-rename');
+var browserSync = require('browser-sync');
 
-var coffeeSources = ['javascripts/coffee/*.coffee'];
-var sassSources = ['stylesheets/sass/*.scss'];
 
-// CoffeeScript
 
-gulp.task('coffee', function() {
-  return gulp.src(coffeeSources)
-    .pipe(coffee({bare: true}).on('error', gutil.log))
-    .pipe(gulp.dest('javascripts/coffee/compiled'));
+// BrowserSync
+gulp.task('browser-sync', function() {
+  browserSync({
+    server: {
+       baseDir: "./"
+    }
+  });
 });
 
-// JavaScript Uglify, Concat
-
-gulp.task('js', ['coffee'], function() {
-  return gulp.src([
-      'javascripts/vendor/*.js',
-      'javascripts/coffee/compiled/*.js'
-    ])
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest('javascripts'));
+// BS-Reload
+gulp.task('bs-reload', function () {
+  browserSync.reload();
 });
 
-// CSS, Sass, Autoprefixer, Minify
+// Lint Task
+gulp.task('lint', function() {
+  return gulp.src('assets/javascripts/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
+});
 
-gulp.task('sass', function() {
-  gulp.src([
-    'stylesheets/vendor/*.css',
-    'stylesheets/sass/*.scss'])
+// Compile Our Sass & run Autoprefixer
+gulp.task('styles', function(){
+  gulp.src(['assets/stylesheets/**/*.scss'])
+    .pipe(plumber({
+      errorHandler: function (error) {
+        console.log(error.message);
+        this.emit('end');
+    }}))
     .pipe(sass())
-    .pipe(prefix())
-    .pipe(concat('main.css'))
-    .pipe(minifycss())
-    .pipe(gulp.dest('stylesheets'));
+    // .pipe(sass({
+    //   includePaths: ['bower_components/foundation/scss']
+    // }))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(gulp.dest('assets/stylesheets/'))
+    .pipe(browserSync.reload({stream:true}))
 });
 
-// Connect
-
-gulp.task('connect', function() {
-  connect.server();
+// Concatenate & Minify JS
+gulp.task('scripts', function() {
+  return gulp.src('assets/javascripts/**/*.js')
+    .pipe(concat('main.js'))
+    .pipe(gulp.dest('assets/javascripts/'))
+    .pipe(rename('main.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist'));
 });
 
-// Watch
-
-gulp.task('watch', function() {
-  gulp.watch(coffeeSources, ['js']);
-  gulp.watch(sassSources, ['sass']);
+// Default Task
+gulp.task('default', ['browser-sync'], function(){
+  gulp.watch("assets/stylesheets/**/*.scss", ['styles']);
+  gulp.watch("assets/javascripts/**/*.js", ['scripts']);
+  gulp.watch("*.html", ['bs-reload']);
 });
-
-gulp.task('default', ['sass', 'js', 'connect', 'watch']);
