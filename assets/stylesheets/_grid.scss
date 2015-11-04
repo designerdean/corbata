@@ -1,0 +1,24 @@
+// Apply box-sizing: border-box to all elements: http://bit.ly/1yDao1h
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+// Main
+// ==========================================================================
+
+$main-width: 75em; // Change your main area width here
+
+.main {
+  margin: 0 auto;
+  max-width: $main-width;
+}

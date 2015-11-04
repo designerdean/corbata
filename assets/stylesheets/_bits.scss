@@ -1,0 +1,86 @@
+// Sass Mixins
+// ==========================================================================
+
+$babybear:   30em;
+$goldilocks: 50em;
+$mamabear:   75em;
+$papabear:   85em;
+
+$bp-offset: 0.01em;
+
+// Under (Desktop First)
+@mixin under($device-width) {
+  @media screen and (max-width: $device-width - $bp-offset) {
+    @content 
+  }
+}
+
+// Over (Mobile First)
+@mixin over($device-width) {
+  @media screen and (min-width: $device-width) {
+    @content 
+  }
+}
+
+// Between (Larger value goes first)
+@mixin between($point-max, $point-min) {
+  @media (max-width: $point-max - $bp-offset) and (min-width: $point-min) {
+    @content 
+  }
+}
+
+// Retina Background Image Replacement: http://bit.ly/1w0JO4e
+@mixin image-2x($image-1x, $image-2x) {
+  background-image: image-url($image-1x);
+  background-repeat: repeat;
+  @media 
+    only screen and (-webkit-min-device-pixel-ratio: 2), 
+    only screen and (min-resolution: 192dpi) { 
+      background-image: image-url($image-2x);
+      background-size: image-width('#{$image-1x}') image-height('#{$image-1x}');
+    }
+}
+
+// Clearfix: http://bit.ly/1ybOcc3 & http://bit.ly/1pnL4bf
+@mixin clearfix() {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
+
+// Fix weirdness during CSS transitions
+@mixin fix-transition-bugs() {
+  backface-visibility: hidden; // Fixes flickering of objects during CSS transitions
+  transform: rotate3d(0,0,0,0); // Fixes font-weight shifting during CSS transitions
+}
+
+// Sass Extends
+// ==========================================================================
+
+// Only use @extend to share traits among explicitly related rulesets: http://bit.ly/1viYJEW
+
+// Sass Maps
+// ==========================================================================
+
+// Sass Variables
+// ==========================================================================
+
+$color-base: #000;
+$color-accent: #e92b33;
+
+// Misc
+// ==========================================================================
+
+// Hide for screen but not screen readers
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
