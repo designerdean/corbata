@@ -1,5 +1,26 @@
-// Vendor
-@import "vendor/normalize.css";
+// Base
+@import "base/normalize";
+@import "base/typography";
+@import "base/icons";
+
+// Helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "helpers/placeholders";
+@import "helpers/maps";
+
+// Layout
+@import "layout/grid";
+@import "layout/header";
+@import "layout/nav";
+@import "layout/footer";
+@import "layout/forms";
+@import "modules/tables";
+
+// Modules
+@import "modules/misc";
+@import "modules/buttons";
 
 // Foundation
 @import 'vendor/foundation/components/grid';
@@ -39,21 +60,3 @@
 @import 'vendor/foundation/components/type';
 @import 'vendor/foundation/components/offcanvas';
 @import 'vendor/foundation/components/visibility';
-
-// Custom
-@import "bits";
-@import "grid";
-@import "typography";
-@import "icons";
-@import "links";
-@import "images";
-@import "tables";
-@import "forms";
-@import "buttons";
-@import "header";
-@import "nav";
-@import "footer";
-@import "modules";
-
-// Print (always last)
-// @import "sass/print";
