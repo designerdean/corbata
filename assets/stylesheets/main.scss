@@ -1,3 +1,7 @@
+// Vendor (that need to come first)
+@import "base/normalize";
+@import "vendor/include-media";
+
 // Foundation
 // @import 'vendor/foundation/components/grid';
 // @import 'vendor/foundation/components/accordion';
@@ -38,7 +42,6 @@
 // @import 'vendor/foundation/components/visibility';
 
 // Base
-@import "base/normalize";
 @import "base/typography";
 @import "base/icons";
 
@@ -62,4 +65,3 @@
 @import "modules/buttons";
 
 // Vendor
-@import "vendor/include-media";

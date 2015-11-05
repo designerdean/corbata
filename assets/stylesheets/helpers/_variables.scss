@@ -20,21 +20,21 @@ $breakpoints: (
 // Examples below - but they should live with the classes, not here
 
 // Mobile First
-body {
-  background-color: pink;
-  @include media(">=tiny") {
-    background-color: aliceblue;
-  }
-  @include media(">=small") {
-    background-color: gold;
-  }
-  @include media(">=medium") {
-    background-color: red;
-  }
-  @include media(">=large") {
-    background-color: gray;
-  }
-}
+// body {
+//   background-color: pink;
+//   @include media(">=tiny") {
+//     background-color: aliceblue;
+//   }
+//   @include media(">=small") {
+//     background-color: gold;
+//   }
+//   @include media(">=medium") {
+//     background-color: red;
+//   }
+//   @include media(">=large") {
+//     background-color: gray;
+//   }
+// }
 
 // Desktop First
 // body {
