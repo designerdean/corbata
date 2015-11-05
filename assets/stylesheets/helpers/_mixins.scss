@@ -1,4 +1,27 @@
-// Sass Mixins
+// Fonts
+// ==========================================================================
+
+@mixin font-base {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+@mixin font-base-bold {
+  @include font-base;
+  font-weight: bold;
+}
+
+@mixin font-alt {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+@mixin font-alt-bold {
+  @include font-alt;
+  font-weight: bold;
+}
+
+// Misc
 // ==========================================================================
 
 // Clearfix: http://bit.ly/1ybOcc3 & http://bit.ly/1pnL4bf
