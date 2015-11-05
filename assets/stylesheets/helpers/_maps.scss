@@ -1,2 +1,48 @@
 // Sass Maps
 // ==========================================================================
+
+// Redefine @include_media breakpoints
+
+$breakpoints: (
+  tiny: 20em,
+  small: 48em,
+  medium: 64em,
+  large: 90em,
+  huge: 120em
+);
+
+// Examples below - but they should live with the classes, not here
+
+// Mobile First
+// body {
+//   background-color: pink;
+//   @include media(">=tiny") {
+//     background-color: aliceblue;
+//   }
+//   @include media(">=small") {
+//     background-color: gold;
+//   }
+//   @include media(">=medium") {
+//     background-color: red;
+//   }
+//   @include media(">=large") {
+//     background-color: gray;
+//   }
+// }
+
+// Desktop First
+// body {
+//   background-color: gray;
+//   @include media("<=large") {
+//     background-color: red;
+//   }
+//   @include media("<=medium") {
+//     background-color: blue;
+//   }
+//   @include media("<=small") {
+//     background-color: aliceblue;
+//   }
+//   @include media("<=tiny") {
+//     background-color: pink;
+//   }
+// }

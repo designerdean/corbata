@@ -2,19 +2,19 @@
 // ==========================================================================
 
 // Font Face Mixin (see http://bit.ly/1l8hxUA for bullet-proof syntax)
-@mixin font-face($font-name, $font-filename) {
-  @font-face {
-    font-family: '#{$font-name}';
-    src: url("'/fonts/#{$font-filename}.eot'"); // IE9 Compat Modes
-    src: url("'/fonts/#{$font-filename}.eot?#iefix'") format('embedded-opentype'), // IE6-IE8
-         url("'/fonts/#{$font-filename}.woff'") format('woff'), // Modern Browsers
-         url("'/fonts/#{$font-filename}.ttf'") format('truetype'), // Safari, Android, iOS
-         url("'/fonts/#{$font-filename}.svg#svg#{$font-filename}'") format('svg'); // Legacy iOS
-  }
-}
+// @mixin font-face($font-name, $font-filename) {
+//   @font-face {
+//     font-family: '#{$font-name}';
+//     src: url("'/fonts/#{$font-filename}.eot'"); // IE9 Compat Modes
+//     src: url("'/fonts/#{$font-filename}.eot?#iefix'") format('embedded-opentype'), // IE6-IE8
+//          url("'/fonts/#{$font-filename}.woff'") format('woff'), // Modern Browsers
+//          url("'/fonts/#{$font-filename}.ttf'") format('truetype'), // Safari, Android, iOS
+//          url("'/fonts/#{$font-filename}.svg#svg#{$font-filename}'") format('svg'); // Legacy iOS
+//   }
+// }
 
 // Use Font Face Mixin (one for each font)
-@include font-face('Font Name', FontName);
+// @include font-face('Font Name', FontName);
 
 // Font Mixins
 
@@ -36,40 +36,4 @@
 @mixin font-alt-bold {
   @include font-alt;
   font-weight: bold;
-}
-
-// Global Font
-// ==========================================================================
-
-html {
-  font-size: 100%; // Change this if you want your root font-size bigger/smaller
-}
-
-body {
-  @include font-base;
-  // color: $color-base;
-  font-size: 1.2em; // Set global font-size here
-  line-height: 1.4; // Set global line-height here
-}
-
-// Headings
-// ==========================================================================
-
-h1, h2, h3, h4, h5, h6 {
-
-}
-
-// Misc
-// ==========================================================================
-
-p {
-
-}
-
-ul, ol {
-
-}
-
-blockquote {
-
 }
