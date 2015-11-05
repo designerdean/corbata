@@ -21,7 +21,7 @@ gulp.task('browser-sync', function() {
   });
 });
 
-// BS-Reload
+// BrowserSync Reload
 gulp.task('bs-reload', function () {
   browserSync.reload();
 });
@@ -33,7 +33,7 @@ gulp.task('lint', function() {
     .pipe(jshint.reporter('default'));
 });
 
-// Compile Our Sass & run Autoprefixer
+// Compile Sass & Run Autoprefixer
 gulp.task('styles', function(){
   gulp.src(['assets/stylesheets/**/*.scss'])
     .pipe(plumber({
