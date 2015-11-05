@@ -28,7 +28,7 @@ gulp.task('bs-reload', function () {
 
 // Lint Task
 gulp.task('lint', function() {
-  return gulp.src('assets/javascripts/**/*.js')
+  return gulp.src('assets/javascripts/custom/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('default'));
 });
@@ -49,9 +49,8 @@ gulp.task('styles', function(){
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-  return gulp.src('assets/javascripts/**/*.js')
+  return gulp.src('assets/javascripts/custom/*.js')
     .pipe(concat('main.js'))
-    // .pipe(gulp.dest('assets/javascripts/'))
     .pipe(rename('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist'));
